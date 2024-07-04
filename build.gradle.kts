@@ -20,14 +20,14 @@ plugins {
 /*
  * Project information
  */
-group = "io.kelvindev15"
+group = "io.github.kelvindev15"
 description = "A Gradle plugin to manage npm projects"
 inner class ProjectInfo {
     val longName = "NPM Gradle Plugin"
     val website = "https://github.com/kelvindev15/$name"
     val vcsUrl = "$website.git"
     val scm = "scm:git:$website.git"
-    val pluginImplementationClass = "$group.template.HelloGradle"
+    val pluginImplementationClass = "$group.npm.HelloGradle"
     val tags = listOf("npm", "node", "package", "gradle", "plugin")
 }
 val info = ProjectInfo()
@@ -48,6 +48,7 @@ dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
     api(kotlin("stdlib-jdk8"))
+    implementation(libs.gson)
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)
     testImplementation(libs.classgraph)

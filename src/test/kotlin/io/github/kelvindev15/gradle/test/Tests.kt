@@ -1,4 +1,4 @@
-package org.danilopianini.gradle.test
+package io.github.kelvindev15.gradle.test
 
 import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.source.yaml

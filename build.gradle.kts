@@ -27,7 +27,7 @@ inner class ProjectInfo {
     val website = "https://github.com/kelvindev15/$name"
     val vcsUrl = "$website.git"
     val scm = "scm:git:$website.git"
-    val pluginImplementationClass = "$group.npm.HelloGradle"
+    val pluginImplementationClass = "$group.gradle.Npm"
     val tags = listOf("npm", "node", "package", "gradle", "plugin")
 }
 val info = ProjectInfo()

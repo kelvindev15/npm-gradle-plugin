@@ -1,44 +1,21 @@
-package io.github.kelvindev15.npm
+package io.github.kelvindev15.gradle
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import io.github.kelvindev15.npm.NpmDependency
+import io.github.kelvindev15.npm.NpmPackageFile
+import io.github.kelvindev15.npm.NpmRepository
+import io.github.kelvindev15.npm.NpmScript
 import org.gradle.api.DefaultTask
-import org.gradle.api.Plugin
-import org.gradle.api.Project
 import org.gradle.api.file.RegularFileProperty
-import org.gradle.api.model.ObjectFactory
 import org.gradle.api.provider.ListProperty
 import org.gradle.api.provider.Property
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.OutputFile
 import org.gradle.api.tasks.TaskAction
-import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.listProperty
 import org.gradle.kotlin.dsl.property
-import org.gradle.kotlin.dsl.register
-import java.io.Serializable
-
-/**
- * Just a template.
- */
-open class HelloGradle : Plugin<Project> {
-    override fun apply(target: Project) {
-        val extension = target.extensions.create<NodeExtension>("packageJson")
-        target.tasks.register<GeneratePackageFileTask>("generatePackageJson") {
-            name.set(extension.name)
-            version.set(extension.version)
-            author.set(extension.author)
-            description.set(extension.description)
-            main.set(extension.main)
-            license.set(extension.license)
-            scripts.set(extension.scripts)
-            dependencies.set(extension.dependencies)
-            devDependencies.set(extension.devDependencies)
-            repository.set(extension.repository)
-            homepage.set(extension.homepage)
-        }
-    }
-}
+import java.io.File
 
 /**
  * Just a template.
@@ -145,34 +122,9 @@ open class GeneratePackageFileTask : DefaultTask() {
             repository = NpmRepository.from(repository.get()),
             homepage = homepage.get(),
         ).toMap()
-        println(gson.toJson(packageFile))
-    }
-}
-
-/**
- * ff.
- */
-open class NodeExtension(objects: ObjectFactory) : Serializable {
-
-    val name: Property<String> = objects.property<String>()
-    val version: Property<String> = objects.property<String>().also {
-        it.convention("1.0.0")
-    }
-    val author: Property<String> = objects.property<String>().also {
-        it.convention("Kelvin Olaiya")
-    }
-    val description: Property<String> = objects.property()
-    val main: Property<String> = objects.property()
-    val license: Property<String> = objects.property()
-    val scripts: ListProperty<Pair<String, String>> = objects.listProperty()
-    val dependencies: ListProperty<Pair<String, String>> = objects.listProperty()
-    val devDependencies: ListProperty<Pair<String, String>> = objects.listProperty()
-    val repository: Property<Pair<String, String>> = objects.property()
-    val homepage: Property<String> = objects.property<String>().also {
-        it.convention("kelvin-olaiya.github.io")
-    }
-
-    companion object {
-        private const val serialVersionUID = 1L
+        File(project.projectDir, "package.json").also {
+            it.createNewFile()
+            it.writeText("${gson.toJson(packageFile)}\n", Charsets.UTF_8)
+        }
     }
 }

@@ -7,7 +7,7 @@ import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.register
 
 /**
- * Just a template.
+ * The Plugin implementation.
  */
 open class Npm : Plugin<Project> {
     private val tasksGroup = "Npm"

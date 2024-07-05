@@ -4,6 +4,7 @@ import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.source.yaml
 import io.github.classgraph.ClassGraph
 import io.kotest.core.spec.style.StringSpec
+import io.kotest.matchers.file.shouldBeADirectory
 import io.kotest.matchers.file.shouldBeAFile
 import io.kotest.matchers.file.shouldExist
 import io.kotest.matchers.shouldBe
@@ -69,6 +70,13 @@ class Tests : StringSpec(
                             shouldBeAFile()
                         }
                         it.validate(file)
+                    }
+                    test.expectation.directory_exists.forEach {
+                        val directory = File("${testFolder.root.absolutePath}/${it.name}").apply {
+                            shouldExist()
+                            shouldBeADirectory()
+                        }
+                        it.validate(directory)
                     }
                 }
             }

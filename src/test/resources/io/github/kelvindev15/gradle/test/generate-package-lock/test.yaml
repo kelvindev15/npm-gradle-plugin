@@ -1,5 +1,5 @@
 tests:
-  - description: "a package.json file should be generated"
+  - description: "A package.json file should be generated"
     configuration:
       tasks: generatePackageJson
     expectation:
@@ -29,3 +29,19 @@ tests:
             "homepage": "kelvin-olaiya.github.io"
           }
       success: generatePackageJson
+
+  - description: "A package-lock.json should be generated"
+    configuration:
+      tasks: generatePackageLock
+    expectation:
+      file_exists:
+        name: "package-lock.json"
+      success: generatePackageLock
+
+  - description: "The node_modules directory should be created"
+    configuration:
+      tasks: npmInstall
+    expectation:
+      directory_exists:
+        name: "node_modules"
+      success: npmInstall

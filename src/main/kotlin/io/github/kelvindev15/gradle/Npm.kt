@@ -5,15 +5,17 @@ import org.gradle.api.Project
 import org.gradle.api.tasks.Exec
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.register
-import java.util.*
 
 /**
  * Just a template.
  */
 open class Npm : Plugin<Project> {
+    private val tasksGroup = "Npm"
+
     override fun apply(target: Project) {
         val extension = target.extensions.create<PackageJsonExtension>("packageJson")
-        target.tasks.register<GeneratePackageFileTask>("generatePackageJson") {
+        val generatePackage = target.tasks.register<GeneratePackageFileTask>("generatePackageJson") {
+            group = tasksGroup
             name.set(extension.name)
             version.set(extension.version)
             author.set(extension.author)
@@ -27,43 +29,38 @@ open class Npm : Plugin<Project> {
             homepage.set(extension.homepage)
         }
 
-        target.tasks.register<Exec>("generatePackageLock") {
-            outputs.files(target.layout.projectDirectory.file("package-lock.json"))
-            commandLine("npm", "install", "--package-lock-only")
-        }
-
         val install = target.tasks.register<Exec>("npmInstall") {
+            group = tasksGroup
+            dependsOn(generatePackage)
             outputs.dir(project.layout.projectDirectory.dir("node_modules"))
             outputs.file(project.layout.projectDirectory.file("package-lock.json"))
             commandLine("npm", "install")
         }
 
+        target.tasks.register<Exec>("generatePackageLock") {
+            group = tasksGroup
+            dependsOn(generatePackage)
+            outputs.files(target.layout.projectDirectory.file("package-lock.json"))
+            commandLine("npm", "install", "--package-lock-only")
+        }
+
         val build = target.tasks.register<Exec>("npmBuild") {
+            group = tasksGroup
             dependsOn(install)
             inputs.dir(project.layout.projectDirectory.dir("src"))
             commandLine("npm", "run", "build")
         }
 
         target.tasks.register<Exec>("npmTest") {
+            group = tasksGroup
             dependsOn(build)
             commandLine("npm", "run", "test")
         }
 
-        extension.scripts.get().filter { it.first !in setOf("build", "test") }.forEach {
-            target.tasks.register<Exec>("npmRun${it.first.capitalize()}") {
-                dependsOn(install)
-                commandLine("npm", "run", it.first)
-            }
-        }
-    }
-
-    companion object {
-        fun String.capitalize() = replaceFirstChar {
-            if (it.isLowerCase()) {
-                it.titlecase(Locale.getDefault())
-            } else {
-                it.toString()
-            }
+        target.tasks.register<Exec>("npmRun") {
+            group = tasksGroup
+            dependsOn(build)
+            commandLine("npm", "run", target.properties["cmd"] as String)
         }
     }
 }

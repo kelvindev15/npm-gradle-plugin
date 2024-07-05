@@ -1,0 +1,17 @@
+tests:
+  - description: "The plugin should create some tasks"
+    configuration:
+      tasks:
+        - npmRun
+        - npmTest
+      options:
+        - "-Pcmd=lint"
+    expectation:
+      output_contains:
+        - "Error: no test specified"
+        - "I'm executing a lint command"
+      success:
+        - npmRun
+        - npmBuild
+      failure:
+        - npmTest

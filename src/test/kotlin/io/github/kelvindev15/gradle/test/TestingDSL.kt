@@ -23,6 +23,7 @@ data class Expectation(
     val failure: List<String> = emptyList(),
     val output_contains: List<String> = emptyList(),
     val output_doesnt_contain: List<String> = emptyList(),
+    val directory_exists: List<ExistingDirectory> = emptyList(),
 )
 
 enum class Permission(private val hasPermission: File.() -> Boolean) {
@@ -30,6 +31,18 @@ enum class Permission(private val hasPermission: File.() -> Boolean) {
 
     fun requireOnFile(file: File) = require(file.hasPermission()) {
         "File ${file.absolutePath} must have permission $name, but it does not."
+    }
+}
+
+data class ExistingDirectory(
+    val name: String,
+    val permissions: List<Permission> = emptyList(),
+) {
+    fun validate(actualDirectory: File): Unit = with(actualDirectory) {
+        require(exists()) {
+            "Directory $name does not exist."
+        }
+        permissions.forEach { it.requireOnFile(this) }
     }
 }
 

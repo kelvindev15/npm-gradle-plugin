@@ -28,6 +28,7 @@ open class Npm : Plugin<Project> {
             devDependencies.set(extension.devDependencies)
             repository.set(extension.repository)
             homepage.set(extension.homepage)
+            println("NPM Executable: ${NpmExec.bin}")
         }
 
         val install = target.tasks.register<Exec>("npmInstall") {

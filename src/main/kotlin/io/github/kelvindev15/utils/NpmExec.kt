@@ -8,7 +8,7 @@ object NpmExec {
      * The path to the npm executable.
      */
     val bin: String = when (Platform.detectOS()) {
-        Platform.OS.WINDOWS -> CLI.runCommand("where npm.exe").trim()
+        Platform.OS.WINDOWS -> CLI.runCommand("which npm.exe").trim()
         else -> CLI.runCommand("which npm").trim()
     }
 }

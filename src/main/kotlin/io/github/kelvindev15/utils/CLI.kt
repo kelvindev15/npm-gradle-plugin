@@ -11,11 +11,14 @@ object CLI {
      */
     fun runCommand(command: String): String {
         val tmpFile = File.createTempFile("npm-plugin", "txt")
+        val errorFile = File.createTempFile("npm-plugin", "txt")
         val process = ProcessBuilder(command.split(" "))
             .redirectOutput(tmpFile)
-            .redirectError(ProcessBuilder.Redirect.INHERIT)
+            .redirectError(errorFile)
             .start()
         process.waitFor()
+        println(tmpFile.readText())
+        println(errorFile.readText())
         return tmpFile.readText()
     }
 }

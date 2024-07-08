@@ -1,5 +1,6 @@
 package io.github.kelvindev15.gradle
 
+import io.github.kelvindev15.utils.NpmExec
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.Exec
@@ -30,37 +31,39 @@ open class Npm : Plugin<Project> {
         }
 
         val install = target.tasks.register<Exec>("npmInstall") {
+            logger.debug("NpmExec.bin: ${NpmExec.bin}")
             group = tasksGroup
             dependsOn(generatePackage)
             outputs.dir(project.layout.projectDirectory.dir("node_modules"))
             outputs.file(project.layout.projectDirectory.file("package-lock.json"))
-            commandLine("npm", "install")
+            commandLine(NpmExec.bin, "install")
         }
 
         target.tasks.register<Exec>("generatePackageLock") {
             group = tasksGroup
             dependsOn(generatePackage)
             outputs.files(target.layout.projectDirectory.file("package-lock.json"))
-            commandLine("npm", "install", "--package-lock-only")
+            println(NpmExec.bin)
+            commandLine(NpmExec.bin, "install", "--package-lock-only")
         }
 
         val build = target.tasks.register<Exec>("npmBuild") {
             group = tasksGroup
             dependsOn(install)
             inputs.dir(project.layout.projectDirectory.dir("src"))
-            commandLine("npm", "run", "build")
+            commandLine(NpmExec.bin, "run", "build")
         }
 
         target.tasks.register<Exec>("npmTest") {
             group = tasksGroup
             dependsOn(build)
-            commandLine("npm", "run", "test")
+            commandLine(NpmExec.bin, "run", "test")
         }
 
         target.tasks.register<Exec>("npmRun") {
             group = tasksGroup
             dependsOn(build)
-            commandLine("npm", "run", target.properties["cmd"] as String)
+            commandLine(NpmExec.bin, "run", target.properties["cmd"] as String)
         }
     }
 }

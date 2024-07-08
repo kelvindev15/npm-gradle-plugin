@@ -21,7 +21,7 @@ object Platform {
         checkOS("Windows") -> OS.WINDOWS
         checkOS("Mac") -> OS.MAC
         checkOS("Linux") -> OS.LINUX
-        else -> throw IllegalStateException("Unsupported OS")
+        else -> error("Unsupported OS")
     }
 
     private fun checkOS(os: String): Boolean = System.getProperty("os.name").startsWith(os)

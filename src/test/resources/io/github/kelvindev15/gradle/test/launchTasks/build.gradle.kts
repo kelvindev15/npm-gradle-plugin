@@ -11,7 +11,7 @@ packageJson {
     license.set("MIT")
     scripts.set(
         listOf(
-            "build" to "true",
+            "build" to "echo \"I'm executing a build command\"",
             "test" to "echo \"Error: no test specified\" && exit 1",
             "lint" to "echo \"I'm executing a lint command\"",
         )

@@ -12,7 +12,7 @@ object CLI {
     fun runCommand(command: String): String {
         val interpreter = when (Platform.detectOS()) {
             Platform.OS.WINDOWS -> listOf("cmd.exe", "/c")
-            else -> listOf("/bin/bash", "-c")
+            else -> emptyList()
         }
         val tmpFile = File.createTempFile("npm-plugin", "txt")
         val errorFile = File.createTempFile("npm-plugin", "txt")

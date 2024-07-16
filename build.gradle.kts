@@ -149,3 +149,10 @@ gradlePlugin {
         }
     }
 }
+
+tasks.withType<PublishToMavenRepository>().forEach { uploadTask ->
+    uploadTask.repository.credentials {
+        username = System.getenv("MAVEN_TOKEN_USERNAME")
+        password = System.getenv("MAVEN_TOKEN_PASSWORD")
+    }
+}

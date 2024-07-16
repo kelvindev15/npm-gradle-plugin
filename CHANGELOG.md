@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.0...1.0.1) (2024-07-16)
+
+
+### Bug Fixes
+
+* **build:** remove forbidden plugin tags ([1ed7d95](https://github.com/kelvindev15/npm-gradle-plugin/commit/1ed7d952c8ba8c5642d276c917b9843c4109c2e0))
+
 ## 1.0.0 (2024-07-16)
 
 

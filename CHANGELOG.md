@@ -1,3 +1,50 @@
+## 1.0.0 (2024-07-16)
+
+
+### Features
+
+* add npmRun task ([55462a5](https://github.com/kelvindev15/npm-gradle-plugin/commit/55462a570621f955ab2b327d6692bc21b8cc4b2f))
+
+
+### Bug Fixes
+
+* correctly run commands on windows ([4c84861](https://github.com/kelvindev15/npm-gradle-plugin/commit/4c8486190e96dedaae3679783594e2f8fe903a8e))
+* npm command on unix system ([0bc42ff](https://github.com/kelvindev15/npm-gradle-plugin/commit/0bc42ff21ed3977b7f697e2e00a3ecc710474db7))
+* run correct windows command ([c43d8b6](https://github.com/kelvindev15/npm-gradle-plugin/commit/c43d8b603ee320d9a331460ee036022b2f10e9ac))
+* try to detect npm bin file ([d7eb2ff](https://github.com/kelvindev15/npm-gradle-plugin/commit/d7eb2ffda731ae587e3561be0110fa580578a63d))
+
+
+### Documentation
+
+* add docstrings ([59a1b81](https://github.com/kelvindev15/npm-gradle-plugin/commit/59a1b81a4aa5d59e92be3bd2e01048850820e169))
+
+
+### Build and continuous integration
+
+* **release:** overwrite maven credentials ([9d81a7a](https://github.com/kelvindev15/npm-gradle-plugin/commit/9d81a7a511b6a170026c8d902143eed384d37628))
+* **release:** use github token ([59d037c](https://github.com/kelvindev15/npm-gradle-plugin/commit/59d037c6ff74f983f9f74d78943b2f4a7ef7f358))
+* setup node for windows ([4643982](https://github.com/kelvindev15/npm-gradle-plugin/commit/46439822c8924836849d6cdf8fd231848f972341))
+
+
+### General maintenance
+
+* add output and input dependencies on various tasks ([a317373](https://github.com/kelvindev15/npm-gradle-plugin/commit/a317373b842f66d02d4bebf85518088c6d154df3))
+* begin writing plugin ([80ba320](https://github.com/kelvindev15/npm-gradle-plugin/commit/80ba320a95219121e2913794173e966c772145cf))
+* completed readme steps ([751f2e1](https://github.com/kelvindev15/npm-gradle-plugin/commit/751f2e13acdf605b7b8e12f2148ad20fe4ead12a))
+* fix detekt issues ([03bbe02](https://github.com/kelvindev15/npm-gradle-plugin/commit/03bbe02cee16728098e20dd15682579f1f693df7))
+* move data classes to separate files ([a78b752](https://github.com/kelvindev15/npm-gradle-plugin/commit/a78b7520d524f713ef156918f954e463989bbc64))
+* print debug line ([ae1eb81](https://github.com/kelvindev15/npm-gradle-plugin/commit/ae1eb8171364b51ebae533b3edc5ba7a74877e8f))
+* print debug line ([9f72d7e](https://github.com/kelvindev15/npm-gradle-plugin/commit/9f72d7e52c125e1e37ce833827effd87d5e60356))
+* start configuring the project ([1881d2e](https://github.com/kelvindev15/npm-gradle-plugin/commit/1881d2eba116c8206cb97b04ebf6d50e902879ff))
+* trigger ci on push ([191280e](https://github.com/kelvindev15/npm-gradle-plugin/commit/191280e776f9e3b601171f1665a3c18f5e1f138d))
+* use npm dot cmd ([862b699](https://github.com/kelvindev15/npm-gradle-plugin/commit/862b699bfdd2a620dcd3ab6a2ae04f0260db0417))
+
+
+### Refactoring
+
+* split plugin file in separate files ([cb3ed10](https://github.com/kelvindev15/npm-gradle-plugin/commit/cb3ed10b42b67da705f85f45fecbe47faac03e14))
+* use error() instead of throwing an exception ([b1bc515](https://github.com/kelvindev15/npm-gradle-plugin/commit/b1bc515e368a4d4567f8a66acd4818eaa75346cf))
+
 ## [2.0.10](https://github.com/DanySK/template-for-gradle-plugins/compare/2.0.9...2.0.10) (2024-05-31)
 
 

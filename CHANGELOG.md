@@ -1,3 +1,16 @@
+## [1.0.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.1...1.0.2) (2024-07-16)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.9 ([3bd8e24](https://github.com/kelvindev15/npm-gradle-plugin/commit/3bd8e246da9ae0deda41993bd1ea76b0381bfa0f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.91 ([67147c5](https://github.com/kelvindev15/npm-gradle-plugin/commit/67147c54cda4547016578dc3dead074d080a417a))
+* **deps:** update plugin multijvmtesting to v1 ([f01e5e9](https://github.com/kelvindev15/npm-gradle-plugin/commit/f01e5e93ffd5b88c178ceb24faa87bb93cb71be0))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.0.3 ([b752cba](https://github.com/kelvindev15/npm-gradle-plugin/commit/b752cba2212d90c65a11e4d8466c17de728ee2d7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.2.0 ([a2c271f](https://github.com/kelvindev15/npm-gradle-plugin/commit/a2c271f907ab3421c565a601be5902690ddc09fa))
+
 ## [1.0.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.0...1.0.1) (2024-07-16)
 
 

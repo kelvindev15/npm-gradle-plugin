@@ -1,3 +1,27 @@
+## [1.0.3](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.2...1.0.3) (2024-07-23)
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.enterprise to v3.17.6 ([038ffc0](https://github.com/kelvindev15/npm-gradle-plugin/commit/038ffc042b44b949ff5c91f820c365910bf4dbe0))
+* **deps:** update plugin kotlin-qa to v0.62.4 ([a070d1d](https://github.com/kelvindev15/npm-gradle-plugin/commit/a070d1dc34de24c08ecd31021dabbd75d2028929))
+* **deps:** update plugin kotlin-qa to v0.63.0 ([c45fd7b](https://github.com/kelvindev15/npm-gradle-plugin/commit/c45fd7bec28524823e197eb9040c811ca16f71d4))
+* **deps:** update plugin multijvmtesting to v1.1.0 ([23dbc05](https://github.com/kelvindev15/npm-gradle-plugin/commit/23dbc05ada850e490443cf51de0626450cb1a773))
+* **deps:** update plugin multijvmtesting to v1.1.1 ([7b118d9](https://github.com/kelvindev15/npm-gradle-plugin/commit/7b118d9cd99f8573adea854edbb261337c93e4e9))
+* **deps:** update plugin multijvmtesting to v1.2.0 ([4495efd](https://github.com/kelvindev15/npm-gradle-plugin/commit/4495efd5dc2b85b5a2e6b46e12c6f2fd4bc5571c))
+* **deps:** update plugin multijvmtesting to v1.2.2 ([2b6b64b](https://github.com/kelvindev15/npm-gradle-plugin/commit/2b6b64ba71405987c0e03f3ce147f36ca3fda04e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.8 ([1d376d8](https://github.com/kelvindev15/npm-gradle-plugin/commit/1d376d83f12df2ab8b1d03cb0cf88832ca17002c))
+* **deps:** update plugin publishoncentral to v5.1.4 ([90a1efc](https://github.com/kelvindev15/npm-gradle-plugin/commit/90a1efc0014afbb69d80c5a3e4d73ab2d3ef98dc))
+
+### Bug Fixes
+
+* add missing documentation for plugin approval ([467a254](https://github.com/kelvindev15/npm-gradle-plugin/commit/467a254057c4f99d4bf240666eca5cff7adef899))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.3.0 ([f620814](https://github.com/kelvindev15/npm-gradle-plugin/commit/f620814f3c2dd1b47185a49ef5e0c67b6fcab704))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.4.0 ([6f6a448](https://github.com/kelvindev15/npm-gradle-plugin/commit/6f6a448c5f62fbf700e845b985e8ff9de501b103))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.0 ([c167b8d](https://github.com/kelvindev15/npm-gradle-plugin/commit/c167b8d5f36ab80f8c7fd47cd5f640185f71ab32))
+
 ## [1.0.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.1...1.0.2) (2024-07-16)
 
 ### Dependency updates

@@ -1,6 +1,6 @@
 # Npm Gradle Plugin
 
-This plugin is a wrapper over the npm cli script. The goal is to integrate the usage of npm in gradle so that devs can easily work node project while relying on the power of the gradle build tool.
+This plugin is a wrapper over the npm cli script. The goal is to integrate the usage of npm within gradle so that devs can easily work node project while relying on the power of the gradle build tool.
 
 ## How to use
 

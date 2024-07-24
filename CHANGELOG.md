@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.3...1.0.4) (2024-07-24)
+
+### Bug Fixes
+
+* typo in README ([1a496d9](https://github.com/kelvindev15/npm-gradle-plugin/commit/1a496d91bfa4bfa4a27f35814e8b95ae213b0054))
+
 ## [1.0.3](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.2...1.0.3) (2024-07-23)
 
 ### Dependency updates

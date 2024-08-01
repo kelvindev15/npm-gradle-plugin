@@ -79,6 +79,41 @@ open class PackageJsonExtension(objects: ObjectFactory) : Serializable {
         it.convention("kelvin-olaiya.github.io")
     }
 
+    /**
+     * A dependency builder for package dependencies.
+     */
+    inner class DependencyBuilder(private val type: ListProperty<Pair<String, String>>) {
+        infix fun String.version(v: String) = type.add(Pair(this, v))
+    }
+
+    /**
+     * A script builder for package scripts.
+     */
+    inner class ScriptBuilder() {
+        infix fun String.runs(script: String) = scripts.add(Pair(this, script))
+    }
+
+    /**
+     * Add a dependency to the package.
+     */
+    fun dependencies(apply: DependencyBuilder.() -> Unit) {
+        DependencyBuilder(dependencies).apply()
+    }
+
+    /**
+     * Add a dev dependency to the package.
+     */
+    fun devDependencies(apply: DependencyBuilder.() -> Unit) {
+        DependencyBuilder(devDependencies).apply()
+    }
+
+    /**
+     * Add a script to the package.
+     */
+    fun scripts(apply: ScriptBuilder.() -> Unit) {
+        ScriptBuilder().apply()
+    }
+
     companion object {
         private const val serialVersionUID = 1L
     }

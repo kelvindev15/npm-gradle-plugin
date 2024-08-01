@@ -43,4 +43,28 @@ Now you can run either one of the following tasks based on your need:
 * `generatePackageLock`: runs the `npm install --package-json-only` command. (This task depends on the *generatePackageJson* task)
 
 The plugin also provide tasks for running npm scripts. 
-Based on the previous example the `npmGreet` task will be created. 
+Based on the previous example the `npmGreet` task will be created.
+
+It is also possible to use an alternative syntax for defining the package.json configuration:
+
+```kotlin
+packageJson {
+    author = "Kelvin Olaiya"
+    name = "test-package"
+    version = "1.0.0"
+    description = "Just a test"
+    main = "index.js"
+    license = "MIT"
+    scripts {
+        "test" runs "echo \"Error: no test specified\" && exit 1"
+    }
+    dependencies {
+        "express" version "^4.17.1"
+    }
+    devDependencies {
+        "nodemon" version "^2.0.7"
+    }
+    repository = ("git" to "https://github.com/kelvindev15/npm-gradle-plugin")
+    homepage = "kelvin-olaiya.github.io"
+}
+```

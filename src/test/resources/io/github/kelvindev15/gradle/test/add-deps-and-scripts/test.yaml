@@ -1,0 +1,32 @@
+tests:
+  - description: "The alternative extension syntax should work"
+    configuration:
+      tasks: generatePackageJson
+    expectation:
+      file_exists:
+        name: "package.json"
+        content: |
+          {
+            "name": "test-package",
+            "version": "1.0.0",
+            "author": "Kelvin Olaiya",
+            "description": "Just a test",
+            "main": "index.js",
+            "license": "MIT",
+            "scripts": {
+              "test": "echo \"Error: no test specified\" \u0026\u0026 exit 1"
+            },
+            "dependencies": {
+              "express": "^4.17.1",
+              "webpack": "^5.0.0"
+            },
+            "devDependencies": {
+              "nodemon": "^2.0.7"
+            },
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/kelvindev15/npm-gradle-plugin"
+            },
+            "homepage": "kelvin-olaiya.github.io"
+          }
+      success: generatePackageJson

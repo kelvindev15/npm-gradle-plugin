@@ -1,3 +1,40 @@
+## [2.0.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.4...2.0.0) (2024-08-01)
+
+### ⚠ BREAKING CHANGES
+
+* automatically generate tasks from scripts in packageJson
+
+### Features
+
+* add NpmTask and NpmScriptTask tasks classes ([3f9a0e2](https://github.com/kelvindev15/npm-gradle-plugin/commit/3f9a0e2f0b5a10ff82d858fe5ca7a33df16a14eb))
+* automatically generate tasks from scripts in packageJson ([b6b6141](https://github.com/kelvindev15/npm-gradle-plugin/commit/b6b614186d538a54aadbd790d7c4a67a48b4cb4c))
+* read existing package.json file and update it ([7889bb0](https://github.com/kelvindev15/npm-gradle-plugin/commit/7889bb0e9732519695dd83bc3b2f58cf8887cbba))
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.92 ([767ae76](https://github.com/kelvindev15/npm-gradle-plugin/commit/767ae7612bbbabcb2ddbd862ef406b9f04bd68b8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.93 ([856b8b8](https://github.com/kelvindev15/npm-gradle-plugin/commit/856b8b8f95ad9e135a77073ab32a006094b20b80))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.95 ([4997bc5](https://github.com/kelvindev15/npm-gradle-plugin/commit/4997bc5dab380e7ee657dcccec5d53f334615e3c))
+* **deps:** update node.js to 20.16 ([6cb92a3](https://github.com/kelvindev15/npm-gradle-plugin/commit/6cb92a3e81791540580a294dbf119fd68fc34194))
+* **deps:** update plugin kotlin-qa to v0.64.0 ([935949c](https://github.com/kelvindev15/npm-gradle-plugin/commit/935949ca794a4dd206181296a087416da58216a9))
+* **deps:** update plugin kotlin-qa to v0.64.1 ([531d24e](https://github.com/kelvindev15/npm-gradle-plugin/commit/531d24e7a46f2fe88ff32cd4b6a881c6d647636e))
+* **deps:** update plugin kotlin-qa to v0.64.3 ([5f04a93](https://github.com/kelvindev15/npm-gradle-plugin/commit/5f04a9366abc77c688b1c30a708d90fa346f2b96))
+* **deps:** update plugin kotlin-qa to v0.65.0 ([a447176](https://github.com/kelvindev15/npm-gradle-plugin/commit/a447176518f0189fed9ba111faf54443a89a67ea))
+
+### Bug Fixes
+
+* test on windows ([2f2afe2](https://github.com/kelvindev15/npm-gradle-plugin/commit/2f2afe2fa7f297e0ba29e5c2cd6ea0cba32b43ed))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.1 ([efad360](https://github.com/kelvindev15/npm-gradle-plugin/commit/efad36027defb439829d7fb1b3c07aaa84fc1360))
+
+### General maintenance
+
+* add docstrings ([b0deeff](https://github.com/kelvindev15/npm-gradle-plugin/commit/b0deeff5f74832d254d16c036fab6f60ecc084a9))
+* update readme ([a520cb5](https://github.com/kelvindev15/npm-gradle-plugin/commit/a520cb5067f1505b702554ce635c9b09d7ca153f))
+* update readme ([de2a1f4](https://github.com/kelvindev15/npm-gradle-plugin/commit/de2a1f4b40623bf648a4af94c989cb983e873430))
+
 ## [1.0.4](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.3...1.0.4) (2024-07-24)
 
 ### Bug Fixes

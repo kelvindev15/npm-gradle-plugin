@@ -43,4 +43,4 @@ Now you can run either one of the following tasks based on your need:
 * `generatePackageLock`: runs the `npm install --package-json-only` command. (This task depends on the *generatePackageJson* task)
 
 The plugin also provide tasks for running npm scripts. 
-Based on the previous example the `npmHello` task will be created. 
+Based on the previous example the `npmGreet` task will be created. 

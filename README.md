@@ -42,8 +42,5 @@ Now you can run either one of the following tasks based on your need:
 * `npmInstall`: runs the `npm install` command. (This task depends on the *generatePackageJson* task)
 * `generatePackageLock`: runs the `npm install --package-json-only` command. (This task depends on the *generatePackageJson* task)
 
-The plugin also provide additional utility task such as:
-
-* `npmBuild`: runs the `npm run build` command.
-* `npmTest`: runs the `npm run test` command.
-* `npmRun -Pcmd=<custom-command>`: run the `npm run <custom-command>` command.
+The plugin also provide tasks for running npm scripts. 
+Based on the previous example the `npmHello` task will be created. 

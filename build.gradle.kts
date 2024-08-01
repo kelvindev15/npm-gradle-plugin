@@ -49,8 +49,8 @@ dependencies {
     api(gradleKotlinDsl())
     api(kotlin("stdlib-jdk8"))
     implementation(libs.gson)
+    implementation(libs.konf.yaml)
     testImplementation(gradleTestKit())
-    testImplementation(libs.konf.yaml)
     testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
 }

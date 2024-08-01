@@ -1,0 +1,35 @@
+tests:
+  - description: "The package.json should be updated"
+    configuration:
+      tasks: generatePackageJson
+    expectation:
+      file_exists:
+        name: "package.json"
+        content: |
+          {
+            "name" : "test-package",
+            "version" : "1.0.0",
+            "description" : "Just a test",
+            "keywords" : [ ],
+            "homepage" : "test.github.io",
+            "license" : "MIT",
+            "author" : "Kelvin Olaiya",
+            "main" : "index.js",
+            "repository" : {
+              "type" : "git",
+              "url" : "https://github.com/kelvindev15/npm-gradle-plugin"
+            },
+            "scripts" : {
+              "test" : "echo \"Error: no test specified\" && exit 1",
+              "build" : "echo build"
+            },
+            "dependencies" : {
+              "express" : "^4.20.1",
+              "body-parser" : "^1.19.0"
+            },
+            "devDependencies" : {
+              "nodemon" : "^2.0.7"
+            },
+            "type" : "module"
+          }
+      success: generatePackageJson

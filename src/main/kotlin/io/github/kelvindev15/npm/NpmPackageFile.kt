@@ -15,22 +15,22 @@ package io.github.kelvindev15.npm
  * [homepage] is the homepage of the package.
  */
 data class NpmPackageFile(
-    val name: String,
-    val version: String = "1.0.0",
-    val author: String,
-    val description: String,
-    val main: String,
-    val license: String,
-    val scripts: Set<NpmScript>,
-    val dependencies: Set<NpmDependency>,
-    val devDependencies: Set<NpmDependency>,
-    val repository: NpmRepository,
-    val homepage: String,
+    val name: String?,
+    val version: String? = "1.0.0",
+    val author: String?,
+    val description: String?,
+    val main: String?,
+    val license: String?,
+    val scripts: List<NpmScript>,
+    val dependencies: List<NpmDependency>,
+    val devDependencies: List<NpmDependency>,
+    val repository: NpmRepository?,
+    val homepage: String?,
 ) {
     /**
      * Converts the package file to a map.
      */
-    fun toMap(): Map<String, Any> {
+    fun toMap(): Map<String, Any?> {
         return mapOf(
             "name" to name,
             "version" to version,
@@ -41,7 +41,7 @@ data class NpmPackageFile(
             "scripts" to scripts.associate { it.name to it.command },
             "dependencies" to dependencies.associate { it.name to it.version },
             "devDependencies" to devDependencies.associate { it.name to it.version },
-            "repository" to mapOf("type" to repository.type, "url" to repository.url),
+            "repository" to mapOf("type" to repository?.type, "url" to repository?.url),
             "homepage" to homepage,
         )
     }

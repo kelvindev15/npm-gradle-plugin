@@ -49,17 +49,23 @@ open class PackageJsonExtension(objects: ObjectFactory) : Serializable {
     /**
      * The scripts of the package.
      */
-    val scripts: ListProperty<Pair<String, String>> = objects.listProperty()
+    val scripts: ListProperty<Pair<String, String>> = objects.listProperty<Pair<String, String>>().also {
+        it.convention(emptyList())
+    }
 
     /**
      * The dependencies of the package.
      */
-    val dependencies: ListProperty<Pair<String, String>> = objects.listProperty()
+    val dependencies: ListProperty<Pair<String, String>> = objects.listProperty<Pair<String, String>>().also {
+        it.convention(emptyList())
+    }
 
     /**
      * The dev dependencies of the package.
      */
-    val devDependencies: ListProperty<Pair<String, String>> = objects.listProperty()
+    val devDependencies: ListProperty<Pair<String, String>> = objects.listProperty<Pair<String, String>>().also {
+        it.convention(emptyList())
+    }
 
     /**
      * The repository of the package.

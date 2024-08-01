@@ -1,3 +1,13 @@
+## [2.1.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/2.0.0...2.1.0) (2024-08-01)
+
+### Features
+
+* provide a more intuitive alternative syntax for the plugin extension ([b6d1f00](https://github.com/kelvindev15/npm-gradle-plugin/commit/b6d1f0081b9c4dc42824f843eed286b7e3b38c5c))
+
+### General maintenance
+
+* add docstring ([f002cc0](https://github.com/kelvindev15/npm-gradle-plugin/commit/f002cc0779ec608db1f9306906390513c4f69843))
+
 ## [2.0.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/1.0.4...2.0.0) (2024-08-01)
 
 ### ⚠ BREAKING CHANGES

@@ -5,10 +5,8 @@ import io.github.kelvindev15.npm.NpmPackageFile
 import io.github.kelvindev15.npm.NpmRepository
 import io.github.kelvindev15.npm.NpmScript
 import io.github.kelvindev15.utils.NpmExec
-import io.github.kelvindev15.utils.Platform
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.tasks.Exec
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.register
 
@@ -39,54 +37,39 @@ open class Npm : Plugin<Project> {
             )
         }
 
-        val install = target.tasks.register<Exec>("npmInstall") {
+        val install = target.tasks.register<NpmTask>("npmInstall") {
             logger.debug("NpmExec.bin: ${NpmExec.bin}")
             group = tasksGroup
             dependsOn(generatePackage)
             outputs.dir(project.layout.projectDirectory.dir("node_modules"))
             outputs.file(project.layout.projectDirectory.file("package-lock.json"))
-            when (Platform.detectOS()) {
-                Platform.OS.WINDOWS -> commandLine("cmd", "/c", NpmExec.bin, "install")
-                else -> commandLine(NpmExec.bin, "install")
-            }
+            arguments("install")
         }
 
-        target.tasks.register<Exec>("generatePackageLock") {
+        target.tasks.register<NpmTask>("generatePackageLock") {
             group = tasksGroup
             dependsOn(generatePackage)
             outputs.files(target.layout.projectDirectory.file("package-lock.json"))
-            when (Platform.detectOS()) {
-                Platform.OS.WINDOWS -> commandLine("cmd", "/c", NpmExec.bin, "install", "--package-lock-only")
-                else -> commandLine(NpmExec.bin, "install", "--package-lock-only")
-            }
+            arguments("install", "--package-lock-only")
         }
 
-        val build = target.tasks.register<Exec>("npmBuild") {
+        val build = target.tasks.register<NpmScriptTask>("npmBuild") {
             group = tasksGroup
             dependsOn(install)
             inputs.dir(project.layout.projectDirectory.dir("src"))
-            when (Platform.detectOS()) {
-                Platform.OS.WINDOWS -> commandLine("cmd", "/c", NpmExec.bin, "run", "build")
-                else -> commandLine(NpmExec.bin, "run", "build")
-            }
+            script.set("build")
         }
 
-        target.tasks.register<Exec>("npmTest") {
+        target.tasks.register<NpmScriptTask>("npmTest") {
             group = tasksGroup
             dependsOn(build)
-            when (Platform.detectOS()) {
-                Platform.OS.WINDOWS -> commandLine("cmd", "/c", NpmExec.bin, "run", "test")
-                else -> commandLine(NpmExec.bin, "run", "test")
-            }
+            script.set("test")
         }
 
-        target.tasks.register<Exec>("npmRun") {
+        target.tasks.register<NpmScriptTask>("npmRun") {
             group = tasksGroup
             dependsOn(build)
-            when (Platform.detectOS()) {
-                Platform.OS.WINDOWS -> commandLine("cmd", "/c", NpmExec.bin, "run", target.properties["cmd"] as String)
-                else -> commandLine(NpmExec.bin, "run", target.properties["cmd"] as String)
-            }
+            script.set(target.properties["cmd"] as String)
         }
     }
 }

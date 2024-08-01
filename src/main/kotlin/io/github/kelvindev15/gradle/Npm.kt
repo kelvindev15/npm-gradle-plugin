@@ -7,6 +7,7 @@ import io.github.kelvindev15.npm.NpmScript
 import io.github.kelvindev15.utils.NpmExec
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.internal.extensions.stdlib.capitalized
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.register
 
@@ -53,23 +54,14 @@ open class Npm : Plugin<Project> {
             arguments("install", "--package-lock-only")
         }
 
-        val build = target.tasks.register<NpmScriptTask>("npmBuild") {
-            group = tasksGroup
-            dependsOn(install)
-            inputs.dir(project.layout.projectDirectory.dir("src"))
-            script.set("build")
-        }
-
-        target.tasks.register<NpmScriptTask>("npmTest") {
-            group = tasksGroup
-            dependsOn(build)
-            script.set("test")
-        }
-
-        target.tasks.register<NpmScriptTask>("npmRun") {
-            group = tasksGroup
-            dependsOn(build)
-            script.set(target.properties["cmd"] as String)
+        target.afterEvaluate {
+            extension.scripts.get().forEach { (scriptName, _) ->
+                target.tasks.register<NpmScriptTask>("npm${scriptName.capitalized()}") {
+                    group = tasksGroup
+                    dependsOn(install)
+                    script.set(scriptName)
+                }
+            }
         }
     }
 }

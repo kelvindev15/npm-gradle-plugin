@@ -4,7 +4,6 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.OptionalItem
-import com.uchuhimo.konf.source.json.toJson
 import io.github.kelvindev15.npm.NpmPackageFile
 import io.github.kelvindev15.npm.PackageJsonSpec
 import io.github.kelvindev15.npm.Repository
@@ -81,7 +80,7 @@ open class GeneratePackageFileTask : DefaultTask() {
                     PackageJsonSpec.repository,
                     PackageJsonSpec.bugs,
                 ).forEach { if (configuration[it] == null) configuration.unset(it) }
-                file.writeText("${configuration.toJson.toText()}\n")
+                file.writeText("${gson.toJson(configuration.toMap())}\n", Charsets.UTF_8)
             } else {
                 file.createNewFile()
                 file.writeText("${gson.toJson(packageJson.get().toMap())}\n", Charsets.UTF_8)

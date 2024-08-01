@@ -7,29 +7,29 @@ tests:
         name: "package.json"
         content: |
           {
-            "name" : "test-package",
-            "version" : "1.0.0",
-            "description" : "Just a test",
-            "keywords" : [ ],
-            "homepage" : "test.github.io",
-            "license" : "MIT",
-            "author" : "Kelvin Olaiya",
-            "main" : "index.js",
-            "repository" : {
-              "type" : "git",
-              "url" : "https://github.com/kelvindev15/npm-gradle-plugin"
+            "name": "test-package",
+            "version": "1.0.0",
+            "description": "Just a test",
+            "keywords": [],
+            "homepage": "test.github.io",
+            "license": "MIT",
+            "author": "Kelvin Olaiya",
+            "main": "index.js",
+            "repository": {
+              "type": "git",
+              "url": "https://github.com/kelvindev15/npm-gradle-plugin"
             },
-            "scripts" : {
-              "test" : "echo \"Error: no test specified\" && exit 1",
-              "build" : "echo build"
+            "scripts": {
+              "test": "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+              "build": "echo build"
             },
-            "dependencies" : {
-              "express" : "^4.20.1",
-              "body-parser" : "^1.19.0"
+            "dependencies": {
+              "express": "^4.20.1",
+              "body-parser": "^1.19.0"
             },
-            "devDependencies" : {
-              "nodemon" : "^2.0.7"
+            "devDependencies": {
+              "nodemon": "^2.0.7"
             },
-            "type" : "module"
+            "type": "module"
           }
       success: generatePackageJson

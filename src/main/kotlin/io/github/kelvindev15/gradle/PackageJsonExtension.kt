@@ -83,13 +83,21 @@ open class PackageJsonExtension(objects: ObjectFactory) : Serializable {
      * A dependency builder for package dependencies.
      */
     inner class DependencyBuilder(private val type: ListProperty<Pair<String, String>>) {
+
+        /**
+         * Add a dependency to the package.
+         */
         infix fun String.version(v: String) = type.add(Pair(this, v))
     }
 
     /**
      * A script builder for package scripts.
      */
-    inner class ScriptBuilder() {
+    inner class ScriptBuilder {
+
+        /**
+         * Add a script to the package.
+         */
         infix fun String.runs(script: String) = scripts.add(Pair(this, script))
     }
 

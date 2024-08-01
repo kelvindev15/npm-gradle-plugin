@@ -4,6 +4,22 @@ import com.uchuhimo.konf.ConfigSpec
 
 /**
  * The specification of the package.json file.
+ *
+ * [name] The name of the package.
+ * [version] The version of the package.
+ * [description] The description of the package.
+ * [keywords] The keywords of the package.
+ * [homepage] The homepage of the package.
+ * [bugs] The link where to report bugs from the package.
+ * [license] The license of the package.
+ * [author] The author of the package.
+ * [main] The main file of the package.
+ * [repository] The repository of the package.
+ * [scripts] The scripts of the package.
+ * [dependencies] The dependencies of the package.
+ * [devDependencies] The dev dependencies of the package.
+ * [private] Whether the package is private.
+ * [type] The type of the package.
  */
 object PackageJsonSpec : ConfigSpec("") {
     val name by optional<String?>(null)
@@ -25,6 +41,8 @@ object PackageJsonSpec : ConfigSpec("") {
 
 /**
  * The specification of the package.json's bugs option.
+ *
+ * [url] The link where to report bugs from the package.
  */
 data class Bugs(
     val url: String,
@@ -32,6 +50,9 @@ data class Bugs(
 
 /**
  * The specification of the package.json's repository option.
+ *
+ * [type] The type of the repository.
+ * [url] The URL of the repository.
  */
 data class Repository(
     val type: String,

@@ -1,3 +1,13 @@
+## [3.0.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/2.1.0...3.0.0) (2024-08-03)
+
+### ⚠ BREAKING CHANGES
+
+* add the possibility to specify dependencies between scripts (#29)
+
+### Features
+
+* add the possibility to specify dependencies between scripts ([#29](https://github.com/kelvindev15/npm-gradle-plugin/issues/29)) ([4bf473b](https://github.com/kelvindev15/npm-gradle-plugin/commit/4bf473b8b58cc3c74a91a491c9228693f9c149ca))
+
 ## [2.1.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/2.0.0...2.1.0) (2024-08-01)
 
 ### Features

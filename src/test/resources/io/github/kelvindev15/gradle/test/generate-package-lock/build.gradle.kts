@@ -9,9 +9,9 @@ packageJson {
     description.set("Just a test")
     main.set("index.js")
     license.set("MIT")
-    scripts.set(
-        listOf("test" to "echo \"Error: no test specified\" && exit 1")
-    )
+    scripts {
+        script("test" runs "echo \"Error: no test specified\" && exit 1")
+    }
     dependencies.set(
         listOf("express" to "^4.17.1")
     )

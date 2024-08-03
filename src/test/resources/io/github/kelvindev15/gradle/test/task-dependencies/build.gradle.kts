@@ -10,7 +10,9 @@ packageJson {
     main = "index.js"
     license = "MIT"
     scripts {
-        script("task1" runs "echo task1")
+        script("task1" runs "echo task1") {
+            it.outputs.file("task1.txt")
+        }
         script("task2" runs "echo task2")
         script("task3" runs "echo task3" dependingOn listOf(npmScript("task1"), npmScript("task2")))
         script("task4" runs "echo task4" dependingOn listOf(npmScript("otherTask") inProject "other"))

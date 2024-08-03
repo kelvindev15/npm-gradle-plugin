@@ -61,6 +61,7 @@ open class Npm : Plugin<Project> {
                     dependsOn(install)
                     dependsOn(*s.taskDependencies.map { it.asGradleTask(target) }.toTypedArray())
                     script.set(s.scriptName)
+                    s.configureTask(this)
                 }
             }
         }

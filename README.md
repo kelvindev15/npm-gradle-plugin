@@ -83,3 +83,16 @@ scripts {
     script("task8" runs "echo task8" dependingOn listOf(task("test", "other")))
 }
 ```
+
+It is also possible to configure the task related to the scripts, for example for setting outputs and inputs:
+
+```kotlin
+scripts {
+    script("task1" runs "echo task1") {
+        with(it) {
+            outputs.file("output.txt")
+            inputs.file("input.txt")
+        }
+    }
+}
+```

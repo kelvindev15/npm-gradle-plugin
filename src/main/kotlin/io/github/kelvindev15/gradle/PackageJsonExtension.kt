@@ -119,11 +119,13 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
      * [scriptName] The name of the script.
      * [command] The command to run.
      * [taskDependencies] The dependencies of the script.
+     * [configureTask] The task configuration.
      */
     data class NpmScript(
         val scriptName: String,
         val command: String,
         val taskDependencies: Set<NpmTaskDependency> = emptySet(),
+        val configureTask: (Task) -> Unit = {},
     )
 
     /**
@@ -160,7 +162,8 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
         /**
          * Add a script to the package.
          */
-        fun script(s: NpmScript) = scripts.add(s)
+        fun script(s: NpmScript, taskConfiguration: (Task) -> Unit = {}) =
+            scripts.add(NpmScript(s.scriptName, s.command, s.taskDependencies, taskConfiguration))
     }
 
     /**

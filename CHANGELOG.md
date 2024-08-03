@@ -1,3 +1,9 @@
+## [3.1.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.0.0...3.1.0) (2024-08-03)
+
+### Features
+
+* add the possibility to confifure script related tasks ([e512258](https://github.com/kelvindev15/npm-gradle-plugin/commit/e512258b775b6b14dcf7905ada8be8fac8791c6a))
+
 ## [3.0.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/2.1.0...3.0.0) (2024-08-03)
 
 ### ⚠ BREAKING CHANGES

@@ -1,0 +1,14 @@
+tests:
+  - description: "Task dependencies should be correctly configured"
+    configuration:
+      tasks:
+        - generatePackageJson
+        - npmTask3
+        - npmTask4
+    expectation:
+      success:
+        - npmTask1
+        - npmTask2
+        - npmTask3
+        - other:npmOtherTask
+        - generatePackageJson

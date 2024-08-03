@@ -29,7 +29,7 @@ open class Npm : Plugin<Project> {
                     description = extension.description.orNull,
                     main = extension.main.orNull,
                     license = extension.license.orNull,
-                    scripts = extension.scripts.get().map { NpmScript(it.first, it.second) },
+                    scripts = extension.scripts.get().map { NpmScript(it.scriptName, it.command) },
                     dependencies = extension.dependencies.get().map { NpmDependency(it.first, it.second) },
                     devDependencies = extension.devDependencies.get().map { NpmDependency(it.first, it.second) },
                     repository = extension.repository.orNull?.let { NpmRepository(it.first, it.second) },
@@ -55,11 +55,12 @@ open class Npm : Plugin<Project> {
         }
 
         target.afterEvaluate {
-            extension.scripts.get().forEach { (scriptName, _) ->
-                target.tasks.register<NpmScriptTask>("npm${scriptName.capitalized()}") {
+            extension.scripts.get().forEach { s ->
+                target.tasks.register<NpmScriptTask>("npm${s.scriptName.capitalized()}") {
                     group = tasksGroup
                     dependsOn(install)
-                    script.set(scriptName)
+                    dependsOn(*s.taskDependencies.map { it.asGradleTask(target) }.toTypedArray())
+                    script.set(s.scriptName)
                 }
             }
         }

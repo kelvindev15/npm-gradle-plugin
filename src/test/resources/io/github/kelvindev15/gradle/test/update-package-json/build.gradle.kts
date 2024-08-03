@@ -9,9 +9,9 @@ packageJson {
     description.set("Just a test")
     main.set("index.js")
     license.set("MIT")
-    scripts.set(
-        listOf("build" to "echo build")
-    )
+    scripts {
+        script("build" runs "echo build")
+    }
     dependencies.set(
         listOf("express" to "^4.20.1", "body-parser" to "^1.19.0")
     )

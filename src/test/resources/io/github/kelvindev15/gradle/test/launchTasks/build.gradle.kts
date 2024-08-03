@@ -9,13 +9,11 @@ packageJson {
     description.set("Just a test")
     main.set("index.js")
     license.set("MIT")
-    scripts.set(
-        listOf(
-            "build" to "echo \"I'm executing a build command\"",
-            "test" to "echo \"Error: no test specified\" && exit 1",
-            "lint" to "echo \"I'm executing a lint command\"",
-        )
-    )
+    scripts {
+        script("build" runs "echo \"I'm executing a build command\"")
+        script("test" runs "echo \"Error: no test specified\" && exit 1")
+        script("lint" runs "echo \"I'm executing a lint command\"")
+    }
     repository.set("git" to "https://github.com/kelvindev15/npm-gradle-plugin")
     homepage.set("kelvin-olaiya.github.io")
 }

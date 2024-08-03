@@ -10,14 +10,10 @@ packageJson {
     main = "index.js"
     license = "MIT"
     scripts {
-        script("test" runs "echo \"Error: no test specified\" && exit 1")
-    }
-    dependencies {
-        "express" version "^4.17.1"
-        "webpack" version "^5.0.0"
-    }
-    devDependencies {
-        "nodemon" version "^2.0.7"
+        script("task1" runs "echo task1")
+        script("task2" runs "echo task2")
+        script("task3" runs "echo task3" dependingOn listOf(npmScript("task1"), npmScript("task2")))
+        script("task4" runs "echo task4" dependingOn listOf(npmScript("otherTask") inProject "other"))
     }
     repository = ("git" to "https://github.com/kelvindev15/npm-gradle-plugin")
     homepage = "kelvin-olaiya.github.io"

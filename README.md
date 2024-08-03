@@ -68,3 +68,18 @@ packageJson {
     homepage = "kelvin-olaiya.github.io"
 }
 ```
+
+You can also specify script dependencies:
+
+```kotlin
+scripts {
+    script("task1" runs "echo task1")
+    script("task2" runs "echo task2")
+    script("task3" runs "echo task3" dependingOn listOf(npmScript("task1"), npmScript("task2")))
+    script("task4" runs "echo task4" dependingOn listOf(npmScript("otherTask") inProject "other"))
+    script("task5" runs "echo task5" dependingOn listOf(npmScript("otherTask", "other")))
+    script("task6" runs "echo task6" dependingOn listOf(task("test")))
+    script("task7" runs "echo task7" dependingOn listOf(task("test") inProject "other"))
+    script("task8" runs "echo task8" dependingOn listOf(task("test", "other")))
+}
+```

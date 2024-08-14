@@ -1,3 +1,20 @@
+## [3.1.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.0...3.1.1) (2024-08-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.10 ([7402403](https://github.com/kelvindev15/npm-gradle-plugin/commit/7402403888cb891ebb00119eef6e9efac0e098c5))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.0.10 ([69e7f17](https://github.com/kelvindev15/npm-gradle-plugin/commit/69e7f174763a61105c6465bd1d11730c3a00a9e4))
+* **deps:** update plugin kotlin-qa to v0.65.1 ([c7f2ff6](https://github.com/kelvindev15/npm-gradle-plugin/commit/c7f2ff6282b291b6ee801102334d9f66b6ec03b4))
+* **deps:** update plugin multijvmtesting to v1.2.3 ([13f4a09](https://github.com/kelvindev15/npm-gradle-plugin/commit/13f4a09c0f0af9d1df940125512ca9b59fd9365e))
+* **deps:** update plugin multijvmtesting to v1.2.4 ([cd34382](https://github.com/kelvindev15/npm-gradle-plugin/commit/cd343823ead06fdf0242b122f3d0dfb9b2faa620))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.9 ([7cdf56d](https://github.com/kelvindev15/npm-gradle-plugin/commit/7cdf56d56ea0ea2fb08e77b454eb07b37457be24))
+* **deps:** update plugin publishoncentral to v5.1.5 ([7037972](https://github.com/kelvindev15/npm-gradle-plugin/commit/7037972dba3bce353b87b05cbf2534e6275c7aec))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.2 ([074e4b9](https://github.com/kelvindev15/npm-gradle-plugin/commit/074e4b916c722de62661648ab149bbb0c84552a7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.3 ([c95b49e](https://github.com/kelvindev15/npm-gradle-plugin/commit/c95b49e58e7eb4f3f8d8937373ec6b0902b08c94))
+
 ## [3.1.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.0.0...3.1.0) (2024-08-03)
 
 ### Features

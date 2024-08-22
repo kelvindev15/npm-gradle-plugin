@@ -1,3 +1,13 @@
+## [3.2.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.2...3.2.0) (2024-08-22)
+
+### Features
+
+* give the possibility to specify the type of package (commonjs,module) ([a4db018](https://github.com/kelvindev15/npm-gradle-plugin/commit/a4db0185c253fc24f242c62143f940a45691a666))
+
+### Dependency updates
+
+* **deps:** update plugin multijvmtesting to v1.2.5 ([90ffe10](https://github.com/kelvindev15/npm-gradle-plugin/commit/90ffe102da790217ae7a1e7c53a19ede9cf9cddf))
+
 ## [3.1.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.1...3.1.2) (2024-08-22)
 
 ### Dependency updates

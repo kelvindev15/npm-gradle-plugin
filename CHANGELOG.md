@@ -1,3 +1,16 @@
+## [3.1.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.1...3.1.2) (2024-08-22)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin:kotlin-gradle-plugin to v2.0.20 ([000b0e7](https://github.com/kelvindev15/npm-gradle-plugin/commit/000b0e7ce8c74514c74bd67ef7ab528f29f15fb4))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.175 ([45738e1](https://github.com/kelvindev15/npm-gradle-plugin/commit/45738e1937d84f5c6464c5e19e02e639af3bdfca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.96 ([8b33ceb](https://github.com/kelvindev15/npm-gradle-plugin/commit/8b33cebea62c59ab0db729d161157b60c668073e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.97 ([2a0ca31](https://github.com/kelvindev15/npm-gradle-plugin/commit/2a0ca3160c2e7e95ac449069c5695c7290e5f841))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.99 ([5bd1a20](https://github.com/kelvindev15/npm-gradle-plugin/commit/5bd1a20607301d80defd39d36743b6e385119c6a))
+* **deps:** update plugin com.gradle.enterprise to v3.18 ([04ff349](https://github.com/kelvindev15/npm-gradle-plugin/commit/04ff349d449a41421a6c6781962b958582db2855))
+* **deps:** update plugin kotlin-qa to v0.65.2 ([e727c5d](https://github.com/kelvindev15/npm-gradle-plugin/commit/e727c5da36a987ab14e10073087b74292ac424d0))
+* **deps:** update plugin publishoncentral to v5.1.6 ([8953259](https://github.com/kelvindev15/npm-gradle-plugin/commit/8953259535c79225c8aec113a75ed84c556a66e8))
+
 ## [3.1.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.0...3.1.1) (2024-08-14)
 
 ### Dependency updates

@@ -13,6 +13,7 @@ package io.github.kelvindev15.npm
  * [devDependencies] are the devDependencies of the package.
  * [repository] is the repository of the package.
  * [homepage] is the homepage of the package.
+ * [type] is the type of the package.
  */
 data class NpmPackageFile(
     val name: String?,
@@ -26,6 +27,7 @@ data class NpmPackageFile(
     val devDependencies: List<NpmDependency>,
     val repository: NpmRepository?,
     val homepage: String?,
+    val type: String? = "commonjs",
 ) {
     /**
      * Converts the package file to a map.
@@ -43,6 +45,7 @@ data class NpmPackageFile(
             "devDependencies" to devDependencies.associate { it.name to it.version },
             "repository" to mapOf("type" to repository?.type, "url" to repository?.url),
             "homepage" to homepage,
+            "type" to type,
         )
     }
 }

@@ -26,7 +26,8 @@ tests:
               "type": "git",
               "url": "https://github.com/kelvindev15/npm-gradle-plugin"
             },
-            "homepage": "kelvin-olaiya.github.io"
+            "homepage": "kelvin-olaiya.github.io",
+            "type": "commonjs"
           }
       success: generatePackageJson
 

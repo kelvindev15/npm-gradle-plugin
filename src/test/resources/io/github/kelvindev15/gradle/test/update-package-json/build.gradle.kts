@@ -20,4 +20,5 @@ packageJson {
     )
     repository.set("git" to "https://github.com/kelvindev15/npm-gradle-plugin")
     homepage.set("test.github.io")
+    type = "module"
 }

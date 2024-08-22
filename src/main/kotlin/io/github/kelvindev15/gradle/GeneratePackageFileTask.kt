@@ -45,6 +45,7 @@ open class GeneratePackageFileTask : DefaultTask() {
                 configuration[PackageJsonSpec.license] = packageJsonOptions.license
                 configuration[PackageJsonSpec.main] = packageJsonOptions.main
                 configuration[PackageJsonSpec.homepage] = packageJsonOptions.homepage
+                configuration[PackageJsonSpec.type] = packageJsonOptions.type
                 fun addToCurrent(key: OptionalItem<Map<String, String>?>, addition: Map<String, String>) {
                     val current = configuration[key]
                     if (current != null) {

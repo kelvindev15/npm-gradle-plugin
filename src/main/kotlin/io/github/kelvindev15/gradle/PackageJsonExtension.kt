@@ -44,6 +44,13 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
     val main: Property<String> = project.objects.property()
 
     /**
+     * The type of package.
+     */
+    val type: Property<String> = project.objects.property<String>().also {
+        it.convention("commonjs")
+    }
+
+    /**
      * The license of the package.
      */
     val license: Property<String> = project.objects.property()

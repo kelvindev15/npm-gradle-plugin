@@ -34,6 +34,7 @@ open class Npm : Plugin<Project> {
                     devDependencies = extension.devDependencies.get().map { NpmDependency(it.first, it.second) },
                     repository = extension.repository.orNull?.let { NpmRepository(it.first, it.second) },
                     homepage = extension.homepage.orNull,
+                    type = extension.type.orNull,
                 ),
             )
         }

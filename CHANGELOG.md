@@ -1,3 +1,20 @@
+## [3.2.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.0...3.2.1) (2024-08-29)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.100 ([c6a79aa](https://github.com/kelvindev15/npm-gradle-plugin/commit/c6a79aabc05baa2f1c2bda9c007d749b9d7506a6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.101 ([85fabb0](https://github.com/kelvindev15/npm-gradle-plugin/commit/85fabb080a40d91d292169381d97346aefbb75e1))
+* **deps:** update node.js to 20.17 ([4c16bf2](https://github.com/kelvindev15/npm-gradle-plugin/commit/4c16bf29250faef32c022ab77e2df925e1d135d7))
+* **deps:** update plugin gradlepluginpublish to v1.2.2 ([1661618](https://github.com/kelvindev15/npm-gradle-plugin/commit/16616180576d98661b580423b9b885257e71caf9))
+
+### Bug Fixes
+
+* remove prints ([#54](https://github.com/kelvindev15/npm-gradle-plugin/issues/54)) ([c69e657](https://github.com/kelvindev15/npm-gradle-plugin/commit/c69e6570bfb49ec3a7695b6212f48547866c2922))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.4 ([b6d46b8](https://github.com/kelvindev15/npm-gradle-plugin/commit/b6d46b8cc79173b27f42580a856b0381dc4112d9))
+
 ## [3.2.0](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.1.2...3.2.0) (2024-08-22)
 
 ### Features

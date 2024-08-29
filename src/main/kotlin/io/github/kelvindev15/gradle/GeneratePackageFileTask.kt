@@ -15,7 +15,7 @@ import org.gradle.kotlin.dsl.property
 import java.io.File
 
 /**
- * Just a template.
+ * The task to generate the package.json file.
  */
 open class GeneratePackageFileTask : DefaultTask() {
 
@@ -28,7 +28,7 @@ open class GeneratePackageFileTask : DefaultTask() {
     val packageJson: Property<NpmPackageFile> = project.objects.property()
 
     /**
-     * Just a template.
+     * Generates the package.json file.
      */
     @TaskAction
     fun generatePackageFile() {

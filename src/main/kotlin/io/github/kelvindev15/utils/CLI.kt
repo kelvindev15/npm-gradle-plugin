@@ -21,8 +21,6 @@ object CLI {
             .redirectError(errorFile)
             .start()
         process.waitFor()
-        println(tmpFile.readText())
-        println(errorFile.readText())
         return tmpFile.readLines().first()
     }
 }

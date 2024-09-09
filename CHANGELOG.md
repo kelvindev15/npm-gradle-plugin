@@ -1,3 +1,13 @@
+## [3.2.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.1...3.2.2) (2024-09-09)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.10.1 ([dadc8a6](https://github.com/kelvindev15/npm-gradle-plugin/commit/dadc8a64de641a8b619794634c07b986715d9258))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.102 ([4864381](https://github.com/kelvindev15/npm-gradle-plugin/commit/48643816c071ae0d5515682884f9fe1576a7f555))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.104 ([4aa417b](https://github.com/kelvindev15/npm-gradle-plugin/commit/4aa417babbdf367f3d1f9e8305e3adddb18e5a42))
+* **deps:** update plugin kotlin-qa to v0.66.0 ([a247289](https://github.com/kelvindev15/npm-gradle-plugin/commit/a247289ba6c74aa1f4a78c5968c8d9126b6de137))
+* **deps:** update plugin kotlin-qa to v0.66.1 ([d5cd466](https://github.com/kelvindev15/npm-gradle-plugin/commit/d5cd466e3d2db4530aa885d340cc1490738b730f))
+
 ## [3.2.1](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.0...3.2.1) (2024-08-29)
 
 ### Dependency updates

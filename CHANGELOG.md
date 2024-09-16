@@ -1,3 +1,29 @@
+## [3.2.3](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.2...3.2.3) (2024-09-16)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.105 ([c3bbddb](https://github.com/kelvindev15/npm-gradle-plugin/commit/c3bbddb1f078d193c379cb6c231ea108d20215c1))
+* **deps:** update plugin com.gradle.enterprise to v3.18.1 ([93bc577](https://github.com/kelvindev15/npm-gradle-plugin/commit/93bc577101d894916edbaa7a0ee3aab93a185b2e))
+* **deps:** update plugin gradlepluginpublish to v1.3.0 ([6c63248](https://github.com/kelvindev15/npm-gradle-plugin/commit/6c63248b73ac20351b0505558f69d956399bbd9d))
+* **deps:** update plugin multijvmtesting to v1.2.6 ([ab780b0](https://github.com/kelvindev15/npm-gradle-plugin/commit/ab780b070379578309ff6c0628ce5cff0dc3eb9c))
+* **deps:** update plugin multijvmtesting to v1.2.7 ([448ae9d](https://github.com/kelvindev15/npm-gradle-plugin/commit/448ae9d61cf545a761b8fd70f116e72d5d8f603b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.10 ([9a3b294](https://github.com/kelvindev15/npm-gradle-plugin/commit/9a3b294cdfdee410fc972377ad636db8324e88a1))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.12 ([5c21073](https://github.com/kelvindev15/npm-gradle-plugin/commit/5c210735934e585c34fdbbb74896ee889be55cc8))
+* **deps:** update plugin publishoncentral to v5.1.7 ([40c2213](https://github.com/kelvindev15/npm-gradle-plugin/commit/40c22131205f0547d1d23f26b0a7532e34469c2b))
+
+### Bug Fixes
+
+* Add LICENSE ([70595d0](https://github.com/kelvindev15/npm-gradle-plugin/commit/70595d093c9091c054cc7313f1c70bca9f1eb63b))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.5 ([b5e2e85](https://github.com/kelvindev15/npm-gradle-plugin/commit/b5e2e85c013b8fa9e24a42a808eac5269d63b859))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.6 ([823ad79](https://github.com/kelvindev15/npm-gradle-plugin/commit/823ad798d7e8abd52df47a1ef1e69e95eb5631fc))
+
+### General maintenance
+
+* fix readme ([b7ada98](https://github.com/kelvindev15/npm-gradle-plugin/commit/b7ada98ac4c4879777f4d1f07d94c5f28502ac00))
+
 ## [3.2.2](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.1...3.2.2) (2024-09-09)
 
 ### Dependency updates

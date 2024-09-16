@@ -16,23 +16,23 @@ Describe how you would like your `package.json` to be. Here's an example:
 
 ```kotlin
 packageJson {
-    author.set("Kelvin Olaiya")
-    name.set("test-package")
-    version.set("1.0.0")
-    description.set("This is just a test package")
-    main.set("index.js")
-    license.set("MIT")
-    scripts.set(
-        listOf("greet" to "echo \"Hello, this is the greet script\"")
-    )
-    dependencies.set(
-        listOf("express" to "^4.17.1")
-    )
-    devDependencies.set(
-        listOf("nodemon" to "^2.0.7")
-    )
-    repository.set("git" to "https://github.com/kelvindev15/npm-gradle-plugin")
-    homepage.set("kelvin-olaiya.github.io")
+    author = "Kelvin Olaiya"
+    name = "test-package"
+    version = "1.0.0"
+    description = "This is just a test package"
+    main = "index.js"
+    license = "MIT"
+    scripts {
+        script("greet" runs "echo Hello, this is the greet script")
+    }
+    dependencies {
+        "express" version "^4.17.1"
+    }
+    devDependencies {
+        "nodemon" version "^2.0.7"
+    }
+    repository = "git" to "https://github.com/kelvindev15/npm-gradle-plugin"
+    homepage = "kelvin-olaiya.github.io"
 }
 ```
 
@@ -56,7 +56,7 @@ packageJson {
     main = "index.js"
     license = "MIT"
     scripts {
-        "test" runs "echo \"Error: no test specified\" && exit 1"
+        script("test" runs "echo \"Error: no test specified\" && exit 1")
     }
     dependencies {
         "express" version "^4.17.1"

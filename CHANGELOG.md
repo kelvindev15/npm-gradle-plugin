@@ -1,3 +1,17 @@
+## [3.2.4](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.3...3.2.4) (2024-09-24)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.10.2 ([2c52997](https://github.com/kelvindev15/npm-gradle-plugin/commit/2c529970e80075d010e0ea978e6d3731d46dffb3))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.176 ([ff0f7dc](https://github.com/kelvindev15/npm-gradle-plugin/commit/ff0f7dc55b04c04d03c13c341255fe4887122a87))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.106 ([e673c37](https://github.com/kelvindev15/npm-gradle-plugin/commit/e673c37fdcc29a79beb382559ee99793354042ac))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.107 ([ad6cbdb](https://github.com/kelvindev15/npm-gradle-plugin/commit/ad6cbdb41b0624850ae5f9fc52a6b79bfd8e01da))
+* **deps:** update plugin multijvmtesting to v1.2.8 ([9655a9e](https://github.com/kelvindev15/npm-gradle-plugin/commit/9655a9e03e4da8abca491579f45c13ab92267bd8))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.0.4 ([568c3ad](https://github.com/kelvindev15/npm-gradle-plugin/commit/568c3ad68bf02f7594a79741e4690f3edbcfb8a7))
+
 ## [3.2.3](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.2...3.2.3) (2024-09-16)
 
 ### Dependency updates

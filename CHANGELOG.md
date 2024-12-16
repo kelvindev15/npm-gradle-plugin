@@ -1,3 +1,55 @@
+## [3.2.6](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.5...3.2.6) (2024-12-16)
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.179 ([e780df8](https://github.com/kelvindev15/npm-gradle-plugin/commit/e780df8a1ad1e410cfddbc3591fa8cd81bde87f7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.112 ([7cefa3b](https://github.com/kelvindev15/npm-gradle-plugin/commit/7cefa3b2d7b49036da137c63550fd2930229d9ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.113 ([dfd53e1](https://github.com/kelvindev15/npm-gradle-plugin/commit/dfd53e186aa8f2aeb5d2661cefaa4650064b0734))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.114 ([867cbc7](https://github.com/kelvindev15/npm-gradle-plugin/commit/867cbc7807435f1308929c8a8d31df120650a8a4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.115 ([1753b58](https://github.com/kelvindev15/npm-gradle-plugin/commit/1753b5842e42830777ae5c1dffded1180cd66398))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.116 ([6196cb7](https://github.com/kelvindev15/npm-gradle-plugin/commit/6196cb72e58dedf27f71c33369b9af916c0ee678))
+* **deps:** update node.js to 22.12 ([45050f0](https://github.com/kelvindev15/npm-gradle-plugin/commit/45050f0b212f8c5696d5a86ade1b8e51edf07d4e))
+* **deps:** update node.js to v22 ([2c1062c](https://github.com/kelvindev15/npm-gradle-plugin/commit/2c1062ca7fcd37af8c7cb2d25860c858570999d8))
+* **deps:** update plugin com.gradle.enterprise to v3.18.2 ([b01362e](https://github.com/kelvindev15/npm-gradle-plugin/commit/b01362e317f2373e366ba0ab0fb1e36586efda35))
+* **deps:** update plugin com.gradle.enterprise to v3.19 ([240600b](https://github.com/kelvindev15/npm-gradle-plugin/commit/240600b1d055de538ee8cd43f0522a878d7f174a))
+* **deps:** update plugin multijvmtesting to v1.3.0 ([3eed280](https://github.com/kelvindev15/npm-gradle-plugin/commit/3eed28067b9d9fc9ff3442ab2454c58085f2a8ab))
+* **deps:** update plugin multijvmtesting to v1.3.1 ([5ffe809](https://github.com/kelvindev15/npm-gradle-plugin/commit/5ffe809f50efe59c6ebd8866a9a2e917c329bf36))
+* **deps:** update plugin multijvmtesting to v1.3.2 ([07b6148](https://github.com/kelvindev15/npm-gradle-plugin/commit/07b61488c760f7d74d0ebb182e5a8a6efd74bd51))
+* **deps:** update plugin multijvmtesting to v2 ([7b66b31](https://github.com/kelvindev15/npm-gradle-plugin/commit/7b66b3141d8d2e456fbf2d5653ae9e1d7b6fb07f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.14 ([0f21647](https://github.com/kelvindev15/npm-gradle-plugin/commit/0f21647f3f645407784e71c51939f302094b8cdd))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.15 ([c881969](https://github.com/kelvindev15/npm-gradle-plugin/commit/c8819693eeb7331d48bc56d6b5713905de951dc7))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.16 ([d7cd617](https://github.com/kelvindev15/npm-gradle-plugin/commit/d7cd617e5406e5497aaf9ed9292acb415dc83a13))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.9.0 ([383b35f](https://github.com/kelvindev15/npm-gradle-plugin/commit/383b35f3ec86885d53a5ff318d2d99c40d66c744))
+* **deps:** update plugin publishoncentral to v5.1.10 ([5154145](https://github.com/kelvindev15/npm-gradle-plugin/commit/5154145125ccf9ca29d33cb9043071fed41f4786))
+* **deps:** update plugin publishoncentral to v5.1.11 ([cc6d395](https://github.com/kelvindev15/npm-gradle-plugin/commit/cc6d3955faa0f0ac8cf599ed99316b345a915965))
+* **deps:** update plugin publishoncentral to v5.1.9 ([4a192d8](https://github.com/kelvindev15/npm-gradle-plugin/commit/4a192d8e24b9c81b38e1b7410db8d0cea2f335ca))
+* **deps:** update plugin publishoncentral to v6 ([559c2d2](https://github.com/kelvindev15/npm-gradle-plugin/commit/559c2d28d7a3a5fc31d1bbc466d747f5cc1f86a7))
+
+### Documentation
+
+* **deps:** update dependency org.jetbrains.dokka to v2 ([9b8df90](https://github.com/kelvindev15/npm-gradle-plugin/commit/9b8df90725855d3e76de0a9517f796e653c76783))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.2 ([f2c90a5](https://github.com/kelvindev15/npm-gradle-plugin/commit/f2c90a5debcb1adca4219f616e52d029f46acb5d))
+* **deps:** update actions/setup-node action to v4.1.0 ([35e94b3](https://github.com/kelvindev15/npm-gradle-plugin/commit/35e94b3fcbe3adbdd3605bf3a53cd916cbbce179))
+* **deps:** update danysk/action-checkout action to v0.2.22 ([f08fff0](https://github.com/kelvindev15/npm-gradle-plugin/commit/f08fff030271f0003072dba365250290e0825bd0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.11 ([bb2185c](https://github.com/kelvindev15/npm-gradle-plugin/commit/bb2185ccef1b78eb417a800bb1cad75bea8d27a6))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.12 ([381a83d](https://github.com/kelvindev15/npm-gradle-plugin/commit/381a83d558d44efaf236de1de9a1f1d8cd3f8938))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.13 ([92820ff](https://github.com/kelvindev15/npm-gradle-plugin/commit/92820ffa07ec750b5e36363cc323a624f8776e42))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.14 ([92f796a](https://github.com/kelvindev15/npm-gradle-plugin/commit/92f796ac8f3f99c7527fbc1e55335bb04b5e7940))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.15 ([e8dcd86](https://github.com/kelvindev15/npm-gradle-plugin/commit/e8dcd869135e3c786a45f7693113dd899ff10446))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.16 ([3abe2e6](https://github.com/kelvindev15/npm-gradle-plugin/commit/3abe2e6f273e73b5fd23106eea70ad181317974f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.17 ([b59150a](https://github.com/kelvindev15/npm-gradle-plugin/commit/b59150a54fb573ab636031db0122c2203f0d65ba))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.18 ([beff195](https://github.com/kelvindev15/npm-gradle-plugin/commit/beff19524127f2e9fb65d9ce223d563325f5a45f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.19 ([37366bc](https://github.com/kelvindev15/npm-gradle-plugin/commit/37366bc8d044bf02c96a812e8e414ef02cc10c63))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.20 ([5d1f073](https://github.com/kelvindev15/npm-gradle-plugin/commit/5d1f073b4b7ce4c210a1a5f9148dbe3dc0d7a74c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.21 ([1cc8add](https://github.com/kelvindev15/npm-gradle-plugin/commit/1cc8add851747c4125f907432ef1ee6429bc8a0f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.22 ([b6848a7](https://github.com/kelvindev15/npm-gradle-plugin/commit/b6848a700ad8333a0f1129c5c3e2931456fdbe9a))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.23 ([911922a](https://github.com/kelvindev15/npm-gradle-plugin/commit/911922a701b4d150f3d74d447c9f3c43976f9b41))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.24 ([8f3a04b](https://github.com/kelvindev15/npm-gradle-plugin/commit/8f3a04bea051071ddf450f1dcf362e3ce98493e9))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.25 ([861307d](https://github.com/kelvindev15/npm-gradle-plugin/commit/861307d5a898abcebcdf7d87f111dc0ec829f762))
+
 ## [3.2.5](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.4...3.2.5) (2024-10-10)
 
 ### Dependency updates

@@ -9,19 +9,18 @@ data class NpmDependency(
     val name: String,
     val version: String,
 ) {
+    /**
+     * Converts the dependency to a map.
+     */
     companion object {
         /**
          * Converts a pair to a [NpmDependency].
          */
-        fun from(p: Pair<String, String>): NpmDependency {
-            return NpmDependency(p.first, p.second)
-        }
+        fun from(p: Pair<String, String>): NpmDependency = NpmDependency(p.first, p.second)
 
         /**
          * Converts a map to a set of [NpmDependency].
          */
-        fun from(vararg deps: Pair<String, String>): Set<NpmDependency> {
-            return deps.map { from(it) }.toSet()
-        }
+        fun from(vararg deps: Pair<String, String>): Set<NpmDependency> = deps.map { from(it) }.toSet()
     }
 }

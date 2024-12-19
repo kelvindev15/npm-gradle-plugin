@@ -9,12 +9,13 @@ data class NpmRepository(
     val type: String,
     val url: String,
 ) {
+    /**
+     * Converts the repository to a map.
+     */
     companion object {
         /**
          * Converts a pair to a [NpmRepository].
          */
-        fun from(p: Pair<String, String>): NpmRepository {
-            return NpmRepository(p.first, p.second)
-        }
+        fun from(p: Pair<String, String>): NpmRepository = NpmRepository(p.first, p.second)
     }
 }

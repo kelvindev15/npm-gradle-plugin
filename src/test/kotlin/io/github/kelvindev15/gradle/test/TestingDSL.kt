@@ -14,7 +14,10 @@ data class Test(
     val expectation: Expectation,
 )
 
-data class Configuration(val tasks: List<String>, val options: List<String> = emptyList())
+data class Configuration(
+    val tasks: List<String>,
+    val options: List<String> = emptyList(),
+)
 
 @Suppress("ConstructorParameterNaming")
 data class Expectation(
@@ -26,24 +29,31 @@ data class Expectation(
     val directory_exists: List<ExistingDirectory> = emptyList(),
 )
 
-enum class Permission(private val hasPermission: File.() -> Boolean) {
-    R(File::canRead), W(File::canWrite), X(File::canExecute);
+enum class Permission(
+    private val hasPermission: File.() -> Boolean,
+) {
+    R(File::canRead),
+    W(File::canWrite),
+    X(File::canExecute),
+    ;
 
-    fun requireOnFile(file: File) = require(file.hasPermission()) {
-        "File ${file.absolutePath} must have permission $name, but it does not."
-    }
+    fun requireOnFile(file: File) =
+        require(file.hasPermission()) {
+            "File ${file.absolutePath} must have permission $name, but it does not."
+        }
 }
 
 data class ExistingDirectory(
     val name: String,
     val permissions: List<Permission> = emptyList(),
 ) {
-    fun validate(actualDirectory: File): Unit = with(actualDirectory) {
-        require(exists()) {
-            "Directory $name does not exist."
+    fun validate(actualDirectory: File): Unit =
+        with(actualDirectory) {
+            require(exists()) {
+                "Directory $name does not exist."
+            }
+            permissions.forEach { it.requireOnFile(this) }
         }
-        permissions.forEach { it.requireOnFile(this) }
-    }
 }
 
 data class ExistingFile(
@@ -53,36 +63,37 @@ data class ExistingFile(
     val trim: Boolean = false,
     val permissions: List<Permission> = emptyList(),
 ) {
-    fun validate(actualFile: File): Unit = with(actualFile) {
-        require(exists()) {
-            "File $name does not exist."
-        }
-        if (content != null) {
-            val text = readText()
-            require(text == content) {
-                """
-                Content of $name does not match expectations.
-                
-                Expected:
-                $content
-                
-                Actual:
-                $text
-                
-                Difference starts at index ${StringUtils.indexOfDifference(content, text)}:
-                ${StringUtils.difference(content, text)}
-                """.trimIndent()
+    fun validate(actualFile: File): Unit =
+        with(actualFile) {
+            require(exists()) {
+                "File $name does not exist."
             }
-        }
-        findRegex.forEach { regexString ->
-            val regex = Regex(regexString)
-            requireNotNull(readLines().find { regex.matches(it) }) {
-                """
-                None of the lines in $name matches the regular expression $findRegex. File content:
-                ${readText()}
-                """.trimIndent()
+            if (content != null) {
+                val text = readText()
+                require(text == content) {
+                    """
+                    Content of $name does not match expectations.
+                    
+                    Expected:
+                    $content
+                    
+                    Actual:
+                    $text
+                    
+                    Difference starts at index ${StringUtils.indexOfDifference(content, text)}:
+                    ${StringUtils.difference(content, text)}
+                    """.trimIndent()
+                }
             }
+            findRegex.forEach { regexString ->
+                val regex = Regex(regexString)
+                requireNotNull(readLines().find { regex.matches(it) }) {
+                    """
+                    None of the lines in $name matches the regular expression $findRegex. File content:
+                    ${readText()}
+                    """.trimIndent()
+                }
+            }
+            permissions.forEach { it.requireOnFile(this) }
         }
-        permissions.forEach { it.requireOnFile(this) }
-    }
 }

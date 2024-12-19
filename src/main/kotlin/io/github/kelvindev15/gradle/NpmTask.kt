@@ -9,7 +9,6 @@ import org.gradle.api.tasks.TaskAction
  * The task to run a npm command.
  */
 open class NpmTask : Exec() {
-
     private var npmArguments = emptyList<String>()
 
     /**

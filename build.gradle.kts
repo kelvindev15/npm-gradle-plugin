@@ -22,6 +22,7 @@ plugins {
  */
 group = "io.github.kelvindev15"
 description = "A Gradle plugin to manage npm projects"
+
 inner class ProjectInfo {
     val longName = "NPM Gradle Plugin"
     val website = "https://github.com/kelvindev15/$name"
@@ -94,7 +95,10 @@ tasks.withType<Test>().configureEach {
         showStandardStreams = true
         showCauses = true
         showStackTraces = true
-        events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
+        events(
+            *org.gradle.api.tasks.testing.logging.TestLogEvent
+                .values(),
+        )
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
 }

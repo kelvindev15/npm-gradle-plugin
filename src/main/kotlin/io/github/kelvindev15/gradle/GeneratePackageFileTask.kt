@@ -18,7 +18,6 @@ import java.io.File
  * The task to generate the package.json file.
  */
 open class GeneratePackageFileTask : DefaultTask() {
-
     private val gson: Gson = GsonBuilder().setPrettyPrinting().create()
 
     /**
@@ -35,9 +34,10 @@ open class GeneratePackageFileTask : DefaultTask() {
         val packageJsonOptions = packageJson.get()
         File(project.projectDir, "package.json").also { file ->
             if (file.exists()) {
-                val configuration = Config {
-                    addSpec(PackageJsonSpec)
-                }.from.json.file(file)
+                val configuration =
+                    Config {
+                        addSpec(PackageJsonSpec)
+                    }.from.json.file(file)
                 configuration[PackageJsonSpec.name] = packageJsonOptions.name
                 configuration[PackageJsonSpec.version] = packageJsonOptions.version
                 configuration[PackageJsonSpec.description] = packageJsonOptions.description
@@ -46,7 +46,11 @@ open class GeneratePackageFileTask : DefaultTask() {
                 configuration[PackageJsonSpec.main] = packageJsonOptions.main
                 configuration[PackageJsonSpec.homepage] = packageJsonOptions.homepage
                 configuration[PackageJsonSpec.type] = packageJsonOptions.type
-                fun addToCurrent(key: OptionalItem<Map<String, String>?>, addition: Map<String, String>) {
+
+                fun addToCurrent(
+                    key: OptionalItem<Map<String, String>?>,
+                    addition: Map<String, String>,
+                ) {
                     val current = configuration[key]
                     if (current != null) {
                         configuration[key] = current + addition
@@ -61,9 +65,10 @@ open class GeneratePackageFileTask : DefaultTask() {
                     PackageJsonSpec.devDependencies,
                     packageJsonOptions.devDependencies.associate { it.name to it.version },
                 )
-                configuration[PackageJsonSpec.repository] = packageJsonOptions.repository?.let {
-                    Repository(it.type, it.url)
-                }
+                configuration[PackageJsonSpec.repository] =
+                    packageJsonOptions.repository?.let {
+                        Repository(it.type, it.url)
+                    }
                 listOf(
                     PackageJsonSpec.name,
                     PackageJsonSpec.version,

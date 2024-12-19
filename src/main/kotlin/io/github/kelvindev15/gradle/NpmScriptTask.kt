@@ -9,7 +9,6 @@ import org.gradle.kotlin.dsl.property
  * The task to run a npm command.
  */
 open class NpmScriptTask : NpmTask() {
-
     /**
      * The script to run.
      */

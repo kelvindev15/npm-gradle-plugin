@@ -12,8 +12,9 @@ import java.io.Serializable
 /**
  * The package json extension facility.
  */
-open class PackageJsonExtension(private val project: Project) : Serializable {
-
+open class PackageJsonExtension(
+    private val project: Project,
+) : Serializable {
     /**
      * The name of the package.
      */
@@ -22,16 +23,18 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
     /**
      * The version of the package.
      */
-    val version: Property<String> = project.objects.property<String>().also {
-        it.convention("1.0.0")
-    }
+    val version: Property<String> =
+        project.objects.property<String>().also {
+            it.convention("1.0.0")
+        }
 
     /**
      * The author of the package.
      */
-    val author: Property<String> = project.objects.property<String>().also {
-        it.convention("Kelvin Olaiya")
-    }
+    val author: Property<String> =
+        project.objects.property<String>().also {
+            it.convention("Kelvin Olaiya")
+        }
 
     /**
      * The description of the package.
@@ -46,9 +49,10 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
     /**
      * The type of package.
      */
-    val type: Property<String> = project.objects.property<String>().also {
-        it.convention("commonjs")
-    }
+    val type: Property<String> =
+        project.objects.property<String>().also {
+            it.convention("commonjs")
+        }
 
     /**
      * The license of the package.
@@ -58,16 +62,18 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
     /**
      * The scripts of the package.
      */
-    val scripts: ListProperty<NpmScript> = project.objects.listProperty<NpmScript>().also {
-        it.convention(emptyList())
-    }
+    val scripts: ListProperty<NpmScript> =
+        project.objects.listProperty<NpmScript>().also {
+            it.convention(emptyList())
+        }
 
     /**
      * The dependencies of the package.
      */
-    val dependencies: ListProperty<Pair<String, String>> = project.objects.listProperty<Pair<String, String>>().also {
-        it.convention(emptyList())
-    }
+    val dependencies: ListProperty<Pair<String, String>> =
+        project.objects.listProperty<Pair<String, String>>().also {
+            it.convention(emptyList())
+        }
 
     /**
      * The dev dependencies of the package.
@@ -85,15 +91,17 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
     /**
      * The homepage of the package.
      */
-    val homepage: Property<String> = project.objects.property<String>().also {
-        it.convention("kelvin-olaiya.github.io")
-    }
+    val homepage: Property<String> =
+        project.objects.property<String>().also {
+            it.convention("kelvin-olaiya.github.io")
+        }
 
     /**
      * A dependency builder for package dependencies.
      */
-    inner class DependencyBuilder(private val type: ListProperty<Pair<String, String>>) {
-
+    inner class DependencyBuilder(
+        private val type: ListProperty<Pair<String, String>>,
+    ) {
         /**
          * Add a dependency to the package.
          */
@@ -110,13 +118,16 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
         val taskName: String,
         val projectName: String? = null,
     ) {
-
         /**
          * Get the script as a Gradle task.
          */
         fun asGradleTask(project: Project): Task =
             projectName?.let {
-                project.project(":$it").tasks.named(taskName).get()
+                project
+                    .project(":$it")
+                    .tasks
+                    .named(taskName)
+                    .get()
             } ?: project.tasks.named(taskName).get()
     }
 
@@ -139,7 +150,6 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
      * A script builder for package scripts.
      */
     inner class ScriptBuilder {
-
         /**
          * Add a script to the package.
          */
@@ -154,12 +164,18 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
         /**
          * Create a task dependency.
          */
-        fun task(name: String, project: String? = null) = NpmTaskDependency(name, project)
+        fun task(
+            name: String,
+            project: String? = null,
+        ) = NpmTaskDependency(name, project)
 
         /**
          * Create a task dependency for an npm script.
          */
-        fun npmScript(name: String, project: String? = null) = task("npm${name.capitalized()}", project)
+        fun npmScript(
+            name: String,
+            project: String? = null,
+        ) = task("npm${name.capitalized()}", project)
 
         /**
          * Set the project for a task dependency.
@@ -169,8 +185,10 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
         /**
          * Add a script to the package.
          */
-        fun script(s: NpmScript, taskConfiguration: (Task) -> Unit = {}) =
-            scripts.add(NpmScript(s.scriptName, s.command, s.taskDependencies, taskConfiguration))
+        fun script(
+            s: NpmScript,
+            taskConfiguration: (Task) -> Unit = {},
+        ) = scripts.add(NpmScript(s.scriptName, s.command, s.taskDependencies, taskConfiguration))
     }
 
     /**
@@ -194,6 +212,9 @@ open class PackageJsonExtension(private val project: Project) : Serializable {
         ScriptBuilder().apply()
     }
 
+    /**
+     * The serial version UID.
+     */
     companion object {
         private const val serialVersionUID = 1L
     }

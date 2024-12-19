@@ -32,8 +32,8 @@ data class NpmPackageFile(
     /**
      * Converts the package file to a map.
      */
-    fun toMap(): Map<String, Any?> {
-        return mapOf(
+    fun toMap(): Map<String, Any?> =
+        mapOf(
             "name" to name,
             "version" to version,
             "author" to author,
@@ -47,5 +47,4 @@ data class NpmPackageFile(
             "homepage" to homepage,
             "type" to type,
         )
-    }
 }

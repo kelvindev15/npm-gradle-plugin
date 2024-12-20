@@ -1,3 +1,11 @@
+## [3.2.8](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.7...3.2.8) (2024-12-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.12 ([4ef0da2](https://github.com/kelvindev15/npm-gradle-plugin/commit/4ef0da261a43aeac26c5f335820ca5302804153f))
+* **deps:** update plugin multijvmtesting to v3 ([43a0659](https://github.com/kelvindev15/npm-gradle-plugin/commit/43a06596e924fbbc048735a8990760a99de0aad6))
+* **deps:** update plugin publishoncentral to v6.0.1 ([f1c04d3](https://github.com/kelvindev15/npm-gradle-plugin/commit/f1c04d37a229b47d10682bdfa62a0221818ce9fe))
+
 ## [3.2.7](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.6...3.2.7) (2024-12-19)
 
 ### Dependency updates

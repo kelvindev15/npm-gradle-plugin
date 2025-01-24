@@ -1,3 +1,32 @@
+## [3.2.9](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.8...3.2.9) (2025-01-24)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.12.1 ([4dc28eb](https://github.com/kelvindev15/npm-gradle-plugin/commit/4dc28eba4bc31ea53ed595cdf9c18f7898db353b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.117 ([05338ac](https://github.com/kelvindev15/npm-gradle-plugin/commit/05338aceaa52f4a87f865114c0a3ccf2867a2559))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.118 ([066051f](https://github.com/kelvindev15/npm-gradle-plugin/commit/066051f4c5a030b3be38a413cab3d566f13a31f5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.119 ([a9ef881](https://github.com/kelvindev15/npm-gradle-plugin/commit/a9ef881ada7109190d45600d05f5e4a3c1dd25e9))
+* **deps:** update node.js to 22.13 ([5671bc9](https://github.com/kelvindev15/npm-gradle-plugin/commit/5671bc9ca2edb42b3859f869dd147fc90e947212))
+* **deps:** update plugin com.gradle.enterprise to v3.19.1 ([f28bce9](https://github.com/kelvindev15/npm-gradle-plugin/commit/f28bce9d661d698f0f4f7bc0ead986461b27d46e))
+* **deps:** update plugin multijvmtesting to v3.0.2 ([b4f5a88](https://github.com/kelvindev15/npm-gradle-plugin/commit/b4f5a8869ece9db6f59c5b4e4d12355b8a58006c))
+* **deps:** update plugin multijvmtesting to v3.1.1 ([300345d](https://github.com/kelvindev15/npm-gradle-plugin/commit/300345d6b97034e16ab1b849bc53e59c0634ca58))
+* **deps:** update plugin multijvmtesting to v3.1.2 ([c6d1d8b](https://github.com/kelvindev15/npm-gradle-plugin/commit/c6d1d8b57d319fae56080373181ef046b5fe6181))
+* **deps:** update plugin multijvmtesting to v3.2.0 ([d0b73fe](https://github.com/kelvindev15/npm-gradle-plugin/commit/d0b73fe45f118eec6e6cc0b422387a3458315a0e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.18 ([a2e645f](https://github.com/kelvindev15/npm-gradle-plugin/commit/a2e645f684323c06d9be4c1009120ad4edf819ee))
+* **deps:** update plugin publishoncentral to v7 ([fe112ef](https://github.com/kelvindev15/npm-gradle-plugin/commit/fe112efbef65fd73358baa3e0d9ae60b716c3985))
+
+### Build and continuous integration
+
+* add codecov token ([3aaba6a](https://github.com/kelvindev15/npm-gradle-plugin/commit/3aaba6abed9a71e814765a3686e9736c1f62b6d0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.0 ([cf7dfe8](https://github.com/kelvindev15/npm-gradle-plugin/commit/cf7dfe8ea388cfe9be2038aa1a0e80027677a720))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.1 ([9df37aa](https://github.com/kelvindev15/npm-gradle-plugin/commit/9df37aa09f63449dbc364e3c2c94ce328b3aa631))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.2 ([06ebb1e](https://github.com/kelvindev15/npm-gradle-plugin/commit/06ebb1edb423a293010d0b50a98c866eb3e9d908))
+* fix ambiguos drop task name ([1efc5d7](https://github.com/kelvindev15/npm-gradle-plugin/commit/1efc5d7a6ff0252e57ad15b879e1542bad189885))
+
+### General maintenance
+
+* **deps-dev:** bump braces from 3.0.2 to 3.0.3 ([ed4e2e2](https://github.com/kelvindev15/npm-gradle-plugin/commit/ed4e2e22f16e871d1ad9516c2192c72513dfe89e))
+
 ## [3.2.8](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.7...3.2.8) (2024-12-20)
 
 ### Dependency updates

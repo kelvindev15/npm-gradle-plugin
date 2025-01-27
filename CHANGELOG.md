@@ -1,3 +1,21 @@
+## [3.2.10](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.9...3.2.10) (2025-01-27)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.10 ([6542093](https://github.com/kelvindev15/npm-gradle-plugin/commit/654209368cc31400b38baa02b8900d0989c2d843))
+* **deps:** update plugin gitsemver to v3.1.8 ([02cbe71](https://github.com/kelvindev15/npm-gradle-plugin/commit/02cbe7107e84ec79a8aae4a561bdc26f5d0800b4))
+* **deps:** update plugin gitsemver to v3.1.9 ([6206891](https://github.com/kelvindev15/npm-gradle-plugin/commit/6206891d8c249e71b7e2db2f1958ad29bdaff870))
+* **deps:** update plugin multijvmtesting to v3.2.1 ([976f0ad](https://github.com/kelvindev15/npm-gradle-plugin/commit/976f0ad7da60dec3de2c367348c5909a88021a9c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.19 ([1f8ffb5](https://github.com/kelvindev15/npm-gradle-plugin/commit/1f8ffb556409fff1a7f358e161403b841c5c9f0a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.20 ([8ff7502](https://github.com/kelvindev15/npm-gradle-plugin/commit/8ff7502d93ca8dcf8126ff2ef3a06e20e851fb42))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.2.0 ([19e281f](https://github.com/kelvindev15/npm-gradle-plugin/commit/19e281fe4fa12220aa6a1502412a677522216b3e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.3 ([42a34a7](https://github.com/kelvindev15/npm-gradle-plugin/commit/42a34a7c169e1450703c4a34d766a3a2f8064442))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.5 ([dfff06e](https://github.com/kelvindev15/npm-gradle-plugin/commit/dfff06e663d04424ea384712d3f1aa39260a05ec))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.6 ([abbb358](https://github.com/kelvindev15/npm-gradle-plugin/commit/abbb358159197f685a5779b0a0653b84690977f1))
+
 ## [3.2.9](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.8...3.2.9) (2025-01-24)
 
 ### Dependency updates

@@ -1,3 +1,32 @@
+## [3.2.11](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.10...3.2.11) (2025-02-25)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.13 ([2fc7040](https://github.com/kelvindev15/npm-gradle-plugin/commit/2fc70408bd485d3fe9923238b436df98659829db))
+* **deps:** update dependency com.google.code.gson:gson to v2.12.0 ([06798c6](https://github.com/kelvindev15/npm-gradle-plugin/commit/06798c6252598f039f890459c80fc58b6da7a068))
+* **deps:** update dependency com.google.code.gson:gson to v2.12.1 ([1ef10cf](https://github.com/kelvindev15/npm-gradle-plugin/commit/1ef10cf4bd589cd03c42e8466e90ce2ab2510c4d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.120 ([3f50c8b](https://github.com/kelvindev15/npm-gradle-plugin/commit/3f50c8b7425423d8f2c7ee5795d37cdff7300345))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.122 ([77d4b62](https://github.com/kelvindev15/npm-gradle-plugin/commit/77d4b62da6622e6eff0b502ca718f4ccfa7cad97))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.123 ([c3a2ccf](https://github.com/kelvindev15/npm-gradle-plugin/commit/c3a2ccfeff547d03bd4243f64a2242fe2bd84c74))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.124 ([48390d2](https://github.com/kelvindev15/npm-gradle-plugin/commit/48390d26a62289e94fda542479bb821b26311d9d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.125 ([8ee9c98](https://github.com/kelvindev15/npm-gradle-plugin/commit/8ee9c984c02811c0c7d7ab645dd4ba2b20773bdc))
+* **deps:** update node.js to 22.14 ([d91a0dd](https://github.com/kelvindev15/npm-gradle-plugin/commit/d91a0dd424be499120a189064a30de35b7a45c8a))
+* **deps:** update plugin com.gradle.enterprise to v3.19.2 ([1d21faf](https://github.com/kelvindev15/npm-gradle-plugin/commit/1d21faff948f4fa9182617caa958c4fa1abe1c27))
+* **deps:** update plugin gitsemver to v3.1.10 ([ad6bb44](https://github.com/kelvindev15/npm-gradle-plugin/commit/ad6bb4491004dd3f2cfef4f012a62cab35008d0e))
+* **deps:** update plugin gitsemver to v4 ([50c52f5](https://github.com/kelvindev15/npm-gradle-plugin/commit/50c52f5bfac7422f5f9a584aa6cee52b798cdc36))
+* **deps:** update plugin gitsemver to v4.0.2 ([182885f](https://github.com/kelvindev15/npm-gradle-plugin/commit/182885f17ba984f813ca6c84f854394ec94704a3))
+* **deps:** update plugin gradlepluginpublish to v1.3.1 ([5fabeb9](https://github.com/kelvindev15/npm-gradle-plugin/commit/5fabeb93fd9362bce49190dc97e65fc363f1f633))
+* **deps:** update plugin multijvmtesting to v3.2.2 ([4c04caf](https://github.com/kelvindev15/npm-gradle-plugin/commit/4c04cafdde9a5630febeeb6b4d26e89bb1c109c4))
+* **deps:** update plugin multijvmtesting to v3.2.3 ([c8e7094](https://github.com/kelvindev15/npm-gradle-plugin/commit/c8e709497639bc5b8fdf53aafec1c502c1d2ab18))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.21 ([7814ae6](https://github.com/kelvindev15/npm-gradle-plugin/commit/7814ae6756424311975167f82c2a2671d1a228ea))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.10 ([e7ac4fa](https://github.com/kelvindev15/npm-gradle-plugin/commit/e7ac4fa723028b81ae0a1846f42c051a0fd30cda))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.7 ([44ac1d3](https://github.com/kelvindev15/npm-gradle-plugin/commit/44ac1d34958e91c179caa0a128598a2245470941))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.8 ([5820318](https://github.com/kelvindev15/npm-gradle-plugin/commit/58203186035a839938134f1fe69a67cbf7d07038))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.9 ([fb9e118](https://github.com/kelvindev15/npm-gradle-plugin/commit/fb9e118e57fa8e3748143ee66bd0e45aefc17c6d))
+
 ## [3.2.10](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.9...3.2.10) (2025-01-27)
 
 ### Dependency updates

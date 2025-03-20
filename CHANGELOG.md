@@ -1,3 +1,19 @@
+## [3.2.12](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.11...3.2.12) (2025-03-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.20 ([3974ee0](https://github.com/kelvindev15/npm-gradle-plugin/commit/3974ee0a2b7f688e58ba50c766eb498bf1233ad2))
+* **deps:** update plugin multijvmtesting to v3.2.4 ([65283e5](https://github.com/kelvindev15/npm-gradle-plugin/commit/65283e5b473bf12e549d3c78b2a83fbf5a423246))
+* **deps:** update plugin tasktree to v4.0.1 ([d07f70d](https://github.com/kelvindev15/npm-gradle-plugin/commit/d07f70d05b60c0c689579a4687a5cf8b1d5fd41c))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.3.0 ([9b0d236](https://github.com/kelvindev15/npm-gradle-plugin/commit/9b0d2361e4d9eb3562e3142bbb25c7768f598166))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.11 ([8de8f06](https://github.com/kelvindev15/npm-gradle-plugin/commit/8de8f060dfa4d149f8b0367a0e915238b1fe3df9))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.12 ([fd496d3](https://github.com/kelvindev15/npm-gradle-plugin/commit/fd496d39fa7f3562a9c72fd4597420508379d2f5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.13 ([baf214d](https://github.com/kelvindev15/npm-gradle-plugin/commit/baf214d437b961797f4db7912b519c3634af1cd2))
+* **deps:** update dependency node to v22 ([f4bab18](https://github.com/kelvindev15/npm-gradle-plugin/commit/f4bab1809e5f45fda9face5674c6a2ac6a39b9fe))
+
 ## [3.2.11](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.10...3.2.11) (2025-02-25)
 
 ### Dependency updates

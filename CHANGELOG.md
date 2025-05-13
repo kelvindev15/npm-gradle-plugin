@@ -1,3 +1,20 @@
+## [3.2.14](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.13...3.2.14) (2025-05-13)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.21 ([a50e864](https://github.com/kelvindev15/npm-gradle-plugin/commit/a50e864f7794003e2a93e55eed2169ffe5724ded))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.126 ([5f7c5a7](https://github.com/kelvindev15/npm-gradle-plugin/commit/5f7c5a7c2d6910ce0c0cc409c6220ed696d86b83))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.127 ([a9b4533](https://github.com/kelvindev15/npm-gradle-plugin/commit/a9b453368726cea2d2a01772840f8ac9226992dc))
+* **deps:** update node.js to 22.15 ([ea54683](https://github.com/kelvindev15/npm-gradle-plugin/commit/ea546832b7f056ed2fb7578f0809a22f7069d1c6))
+* **deps:** update plugin gitsemver to v5.1.3 ([833296b](https://github.com/kelvindev15/npm-gradle-plugin/commit/833296ba244510ae2b2f02ebbbf6261f5053847c))
+* **deps:** update plugin kotlin-qa to v0.86.1 ([9fb483e](https://github.com/kelvindev15/npm-gradle-plugin/commit/9fb483e1ceb8aea3bb3bd961ea0d61273b159249))
+* **deps:** update plugin kotlin-qa to v0.86.2 ([c282b3f](https://github.com/kelvindev15/npm-gradle-plugin/commit/c282b3fa8422a620c124e5b77c1b7a53550364a6))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.23 ([e3613d2](https://github.com/kelvindev15/npm-gradle-plugin/commit/e3613d2cf64d7a19b9ee84263e74b48c7d223c67))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.18 ([7efde04](https://github.com/kelvindev15/npm-gradle-plugin/commit/7efde0401ea25453a9e03d21679d94121a993090))
+
 ## [3.2.13](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.12...3.2.13) (2025-04-25)
 
 ### Dependency updates

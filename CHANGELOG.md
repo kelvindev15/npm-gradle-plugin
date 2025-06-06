@@ -1,3 +1,19 @@
+## [3.2.16](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.15...3.2.16) (2025-06-06)
+
+### Dependency updates
+
+* **core-deps:** update dependency gradle to v8.14.2 ([5a77ca5](https://github.com/kelvindev15/npm-gradle-plugin/commit/5a77ca5a686ad2b00d9dd5a7c00baa02bf8c4e87))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.129 ([ff1f7bf](https://github.com/kelvindev15/npm-gradle-plugin/commit/ff1f7bf46cee3bbf56a134147aa78ea95f8fa75e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.131 ([9f75aeb](https://github.com/kelvindev15/npm-gradle-plugin/commit/9f75aeb380d1674d334c3c5ec8e79914eb4b4aee))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.132 ([8ce97a4](https://github.com/kelvindev15/npm-gradle-plugin/commit/8ce97a4499f0c811763e7626a241dd559136080a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.133 ([8e85bff](https://github.com/kelvindev15/npm-gradle-plugin/commit/8e85bff6ca08333e1884a1e83d5241b41d6d0696))
+* **deps:** update node.js to 22.16 ([e7c37e7](https://github.com/kelvindev15/npm-gradle-plugin/commit/e7c37e77fd05024e382ee6a3ebdd59b4851401ce))
+* **deps:** update plugin kotlin-qa to v0.88.0 ([cec2fbb](https://github.com/kelvindev15/npm-gradle-plugin/commit/cec2fbbe3bd1ba4484c47723bd9d70b903119d23))
+* **deps:** update plugin kotlin-qa to v0.89.0 ([88a0379](https://github.com/kelvindev15/npm-gradle-plugin/commit/88a03796184544803ab0c70f6cdf9c9c2e0a6b2b))
+* **deps:** update plugin multijvmtesting to v3.4.3 ([89ebf87](https://github.com/kelvindev15/npm-gradle-plugin/commit/89ebf87448ddfc558c9944ad9159fd9b400ef918))
+* **deps:** update plugin multijvmtesting to v3.5.0 ([11a4c2c](https://github.com/kelvindev15/npm-gradle-plugin/commit/11a4c2c8bd0f2d13eef1956a276ade03102194e0))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.25 ([fbbde1f](https://github.com/kelvindev15/npm-gradle-plugin/commit/fbbde1f01dcaf8ccc2a1e691900f890ddad6f367))
+
 ## [3.2.15](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.14...3.2.15) (2025-05-22)
 
 ### Dependency updates

@@ -1,7 +1,6 @@
 @file:Suppress("OPT_IN_USAGE")
 
 import org.apache.tools.ant.taskdefs.condition.Os
-import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
@@ -54,16 +53,6 @@ dependencies {
     testImplementation(gradleTestKit())
     testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
-}
-
-// Enforce Kotlin version coherence
-configurations.matching { it.name != "detekt" }.all {
-    resolutionStrategy.eachDependency {
-        if (requested.group == "org.jetbrains.kotlin" && requested.name.startsWith("kotlin")) {
-            useVersion(KOTLIN_VERSION)
-            because("All Kotlin modules should use the same version, and compiler uses $KOTLIN_VERSION")
-        }
-    }
 }
 
 kotlin {
@@ -151,12 +140,5 @@ gradlePlugin {
             implementationClass = info.pluginImplementationClass
             tags.set(info.tags)
         }
-    }
-}
-
-tasks.withType<PublishToMavenRepository>().forEach { uploadTask ->
-    uploadTask.repository.credentials {
-        username = System.getenv("MAVEN_TOKEN_USERNAME")
-        password = System.getenv("MAVEN_TOKEN_PASSWORD")
     }
 }

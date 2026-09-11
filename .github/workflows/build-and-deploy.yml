@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - uses: DanySK/build-check-deploy-gradle-action@4.0.1
+      - uses: DanySK/build-check-deploy-gradle-action@4.0.45
         with:
           # Dry-deployment
           check-command: ./gradlew build --parallel
@@ -67,7 +67,7 @@ jobs:
         uses: actions/setup-node@v4.4.0
         with:
           node-version: ${{ steps.node-version.outputs.version }}
-      - uses: DanySK/build-check-deploy-gradle-action@4.0.1
+      - uses: DanySK/build-check-deploy-gradle-action@4.0.45
         with:
           build-command: true
           check-command: true

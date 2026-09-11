@@ -1,3 +1,26 @@
+## [3.2.17](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.16...3.2.17) (2026-09-11)
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.180 ([5788e6e](https://github.com/kelvindev15/npm-gradle-plugin/commit/5788e6ec8b922cccae7c1b4634d39a6f0570c861))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.134 ([5a908e3](https://github.com/kelvindev15/npm-gradle-plugin/commit/5a908e36dc7776e304b16d081dcd5dc528e26ebe))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.135 ([de64fc1](https://github.com/kelvindev15/npm-gradle-plugin/commit/de64fc1d894ffd8dd7106e1381ebe001fcc458f6))
+* **deps:** update node.js to 22.17 ([2d4e484](https://github.com/kelvindev15/npm-gradle-plugin/commit/2d4e4849677df75b6b4df2b65d1b9099e6722ffb))
+* **deps:** update plugin gitsemver to v5.1.4 ([9f84b46](https://github.com/kelvindev15/npm-gradle-plugin/commit/9f84b468053d6e83253daae17f2f5237a0ae1589))
+* **deps:** update plugin gitsemver to v5.1.5 ([6bff66f](https://github.com/kelvindev15/npm-gradle-plugin/commit/6bff66f21c54de395f3bf21ac43df0128a04810e))
+* **deps:** update plugin kotlin-qa to v0.89.1 ([852ef08](https://github.com/kelvindev15/npm-gradle-plugin/commit/852ef08bcc56d0d49f7bbc57943efa08eaf1d757))
+* **deps:** update plugin multijvmtesting to v3.5.1 ([f18f291](https://github.com/kelvindev15/npm-gradle-plugin/commit/f18f2911d280848724bf7d665e1f1434e12ed199))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.26 ([c465761](https://github.com/kelvindev15/npm-gradle-plugin/commit/c4657610f1b86d18c428ea2a61c6ee78a90891c5))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.27 ([1b9dd12](https://github.com/kelvindev15/npm-gradle-plugin/commit/1b9dd12c2cc65d58c805f03b1914b254301ae5ab))
+
+### Bug Fixes
+
+* migrate Maven Central publishing from OSSRH to Central Portal ([#310](https://github.com/kelvindev15/npm-gradle-plugin/issues/310)) ([9c8a45b](https://github.com/kelvindev15/npm-gradle-plugin/commit/9c8a45bd39b5efc0f814c7c8adee2f4185c03790))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4 ([cf17a7c](https://github.com/kelvindev15/npm-gradle-plugin/commit/cf17a7c8c3bbcd39d5a72ae23b4e8d76c7c7a5a3))
+
 ## [3.2.16](https://github.com/kelvindev15/npm-gradle-plugin/compare/3.2.15...3.2.16) (2025-06-06)
 
 ### Dependency updates
